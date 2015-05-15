@@ -1,0 +1,13 @@
+<Alloy>
+	<NavigationWindow id="win1" platform="ios">
+		<Window id="winPoliciaCDMX">
+			<LeftNavButton platform="ios">
+				<Button title="Inicio"/>
+			</LeftNavButton>
+			<Label>Hola CGMA</Label>
+			<Button id="btnServidorPublico">Prueba Servidor Público</Button>
+			<Button id="btnAdmin">Prueba Admin</Button>
+			<!-- <Widget src="policiaCDMX" name="contenido" id="contenido" /> -->
+		</Window>
+	</NavigationWindow>
+</Alloy>

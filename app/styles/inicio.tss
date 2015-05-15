@@ -1,0 +1,22 @@
+
+'#win1[platform=ios formFactor=handheld]': {
+	backgroundColor: '#FFFFFF',
+	tintColor: '#C2BEBF'
+},
+'#winPoliciaCDMX[platform=ios formFactor=handheld]': {
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	title: 'Policía CDMX',
+	titleAttributes:  {
+		color: '#FFFFFF'
+	},
+	height: Ti.UI.FILL,
+	layout: 'vertical',
+	barColor: '#0E2843',
+	translucent: true
+},
+
+'#winPoliciaCDMX[platform=android]': {
+	height: Ti.UI.FILL,
+	layout: 'vertical',
+	backgroundColor: '#FFFFFF',
+}

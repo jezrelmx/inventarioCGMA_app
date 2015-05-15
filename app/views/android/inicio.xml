@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="winPoliciaCDMX">
+		<ActionBar displayHomeAsUp="true" title="Policía CDMX" subtitle="Bienvenido" onHomeIconItemSelected="volver" />
+		<!-- <Widget src="policiaCDMX" name="contenido" id="contenido" /> -->
+		<Label>Hola CGMA</Label>
+		<Button id="btnServidorPublico">Prueba Servidor Público</Button>
+		<Button id="btnAdmin">Prueba Admin</Button>
+	</Window>
+</Alloy>
