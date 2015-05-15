@@ -1,17 +1,21 @@
 <Alloy>
 	<Window id="winadmin">
-		<!-- <ActionBar displayHomeAsUp="true" title="Policía CDMX" subtitle="Bienvenido" onHomeIconItemSelected="volver" /> -->
+		<ActionBar displayHomeAsUp="true" title="Inventario CGMA" subtitle="Administrador" onHomeIconItemSelected="volver" />
 				<View id="vistainfo">
-					<Label id="nombre">Jesus Gomez</Label>
-					<Label id="cargo">Subsecretario de Seguridad</Label>
-					<Label id="empleado">4446</Label>
+					<Label id="nombre">Nombre</Label>
+					<Label id="cargo">Cargo</Label>
+					<Label id="empleado">Empleado</Label>
 				</View>
 				<View id="vistabtnusuario">
-					<ImageView id="imgusuario" image="/images/users.png"></ImageView>
+					<View id="view1">
+						<ImageView id="imgusuario"></ImageView>
+					</View>
 					<Button id="btnusuarios">Usuarios</Button>
 				</View>
 				<View id="vistabtnarticulo">
-					<ImageView id="imgarticulo" image="/images/users.png"></ImageView>
+					<View id="view2">
+						<ImageView id="imgarticulo"></ImageView>
+					</View>
 					<Button id="btnarticulos">Articulos</Button>
 				</View>
 	</Window>

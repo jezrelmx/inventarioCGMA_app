@@ -5,7 +5,7 @@
 },
 
 '#vistainfo':{
-	backgroundColor:'blue',
+	// backgroundColor:'blue',
 	width:Titanium.UI.FILL,
 	height:"40%",
 	layout:'vertical'
@@ -33,29 +33,41 @@
 },
 
 '#vistabtnusuario':{
-	backgroundColor:'yellow',
+	// backgroundColor:'yellow',
 	widht:Titanium.UI.FILL,
 	height:"30%",
 	layout:'horizontal'
 },
 
+'#view1':{
+	// backgroundColor:'red',
+	width:"40%",
+	height:Titanium.UI.FILL,
+},
+
 '#imgusuario':{
-	backgroundColor:'red',
-	width:"40%",
-	height:Titanium.UI.FILL,
-	// image:'images/users.png'
+	// backgroundColor:'red',
+	width:"85%",
+	height:"80%",
+	image:'/images/user.png'
 },
-
-'#imgarticulo':{
-	backgroundColor:'green',
-	width:"40%",
-	height:Titanium.UI.FILL,
-	// image:'images/articulos.png'
-},
-
 '#vistabtnarticulo':{
-	backgroundColor:'navy',
+	// backgroundColor:'navy',
 	width:Titanium.UI.FILL,
 	height:"30%",
 	layout:'horizontal'
 },
+
+'#view2':{
+	// backgroundColor:'red',
+	width:"40%",
+	height:Titanium.UI.FILL,
+},
+
+'#imgarticulo':{
+	// backgroundColor:'green',
+	width:"85%",
+	height:"80%",
+	image:'/images/articulos.png'
+},
+
