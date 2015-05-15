@@ -36,10 +36,10 @@ $.btnServidorPublico.addEventListener('click', function() {
 $.btnAdmin.addEventListener('click', function() {
     alert($.txtCorreo.getValue());
     var objCredenciales = {
-        txtUsuario : $.txtCorreo.value,
+        txtCorreo : $.txtCorreo.value,
         txtContrasenia : $.txtContrania.value
     };
-    console.log('usuario ' + objCredenciales.txtUsuario + ' constrasenia ' + objCredenciales.txtContrasenia);
+    console.log('usuario ' + objCredenciales.txtCorreo + ' constrasenia ' + objCredenciales.txtContrasenia);
 
     var url = "http://192.168.3.114/inventarioCGMA/Index_c/inicia_sesion";
     var client = Ti.Network.createHTTPClient({
@@ -50,7 +50,7 @@ $.btnAdmin.addEventListener('click', function() {
             if (respuesta.code == 200) {
                 var objUsuario = JSON.parse(respuesta.data);
                 // alert(objUsuario.nombre);
-                Alloy.createController('administrador', objUsuario);
+                // Alloy.createController('administrador', objUsuario);
             } else {
                 alert('Intente de nuevo' + this.responseText);
             };
@@ -64,7 +64,7 @@ $.btnAdmin.addEventListener('click', function() {
 
     client.open('POST', url);
     client.send({
-        txtUsuario : 'usuario1',
+        txtCorreo : 'usuario1',
         txtContrasenia : '000'
     });
 });
