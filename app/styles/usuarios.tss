@@ -1,0 +1,66 @@
+'#winUsuarios':{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	layout:"horizontal",
+	backgroundColor: '#1A1B1C'
+},
+
+'.viewSeparador': {
+	width: Titanium.UI.FILL,
+	height: '10dp'
+},
+
+'.wrapContenidoBoton': {
+	width: Titanium.UI.FILL,
+	height: '33%',
+	layout: 'horizontal',
+	backgroundColor: '#433F3D',
+},
+
+'.viewImgBoton': {
+	width: '25%',
+	height: Titanium.UI.FILL,
+	layout: 'absolute'
+},
+
+'.viewTxtBoton': {
+	width: '75%',
+	height: '70dp',
+	layout: 'vertical'
+},
+
+'.viewTxtSeccion': {
+	width: Titanium.UI.FILL,
+	height: '35dp',
+	layout: 'absolute'
+},
+
+'.viewTxtInfo': {
+	width: Titanium.UI.FILL,
+	height: '45dp',
+	layout: 'horizontal'
+},
+
+'.viewTxtBotonSub1': {
+	width: '60%',
+	height: Titanium.UI.FILL
+},
+
+'.txtBotonTitulo': {
+	left: '10dp',
+	top: '3dp',
+	color: '#BCC4CA',
+	font: {
+		fontSize: '25dp'
+	}
+},
+
+'.txtBotonSub1': {
+	top: 0,
+	left: '10dp',
+	color: '#BCC4CA',
+	font: {
+		fontSize: '15dp'
+	},
+	width:'90%'
+},

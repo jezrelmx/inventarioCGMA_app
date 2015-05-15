@@ -1,0 +1,53 @@
+<Alloy>
+	<Window id="winUsuarios">
+		<ActionBar displayHomeAsUp="true" title="Inventario CGMA" subtitle="Usuarios" onHomeIconItemSelected="volver" />
+		<View class="viewSeparador"/>
+		<View class="wrapContenidoBoton" onClick="abrirAltaUsuario">
+			<View class="viewImgBoton">
+				<ImageView id="imgAltaUsuario"></ImageView>
+			</View>
+			<View class="viewTxtBoton">
+				<View class="viewTxtSeccion">
+					<Label class="txtBotonTitulo">Alta Usuario(s)</Label>
+				</View>
+				<View class="viewTxtInfo">
+					<View class="viewTxtBotonSub1">
+						<Label class="txtBotonSub1">Registro de nuevos usuarios</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+		<View class="viewSeparador"/>
+		<View class="wrapContenidoBoton" onClick="abrirBajaUsuario">
+			<View class="viewImgBoton">
+				<ImageView id="imgBajaUsuario"></ImageView>
+			</View>
+			<View class="viewTxtBoton">
+				<View class="viewTxtSeccion">
+					<Label class="txtBotonTitulo">Baja Usuario(s)</Label>
+				</View>
+				<View class="viewTxtInfo">
+					<View class="viewTxtBotonSub1">
+						<Label class="txtBotonSub1">Modifica el estatus de usuarios</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+		<View class="viewSeparador"/>
+		<View class="wrapContenidoBoton" onClick="abrirConsultaUsuario">
+			<View class="viewImgBoton">
+				<ImageView id="imgConsultaUsuario"></ImageView>
+			</View>
+			<View class="viewTxtBoton">
+				<View class="viewTxtSeccion">
+					<Label class="txtBotonTitulo">Consulta Usuario(s)</Label>
+				</View>
+				<View class="viewTxtInfo">
+					<View class="viewTxtBotonSub1">
+						<Label class="txtBotonSub1">Consulta resguardos de usuarios</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>
