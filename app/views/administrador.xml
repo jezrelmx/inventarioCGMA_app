@@ -7,11 +7,11 @@
 					<Label id="empleado">4446</Label>
 				</View>
 				<View id="vistabtnusuario">
-					<ImageView id="imgusuario" image:"images/users.png"></ImageView>
+					<ImageView id="imgusuario" image="/images/users.png"></ImageView>
 					<Button id="btnusuarios">Usuarios</Button>
 				</View>
 				<View id="vistabtnarticulo">
-					<ImageView id="imgarticulo" image:"images/users.png"></ImageView>
+					<ImageView id="imgarticulo" image="/images/users.png"></ImageView>
 					<Button id="btnarticulos">Articulos</Button>
 				</View>
 	</Window>
