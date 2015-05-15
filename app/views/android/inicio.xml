@@ -9,10 +9,14 @@
 				<Label id="lbTitulo">Inicio de sesión</Label>
 			</View>
 			<View id="viewFormulario">
-				<Label id="lbCorreo">Correo electrónico</Label>
-				<TextField id="txtCorreo"></TextField>
-				<Label id="lbCorreo">Contraseña</Label>
-				<TextField id="txtContrania"></TextField>
+				<View class="viewFormularioCampo">
+					<Label id="lbCorreo">Correo electrónico</Label>
+					<TextField id="txtCorreo"></TextField>
+				</View>
+				<View class="viewFormularioCampo">
+					<Label id="lbCorreo">Contraseña</Label>
+					<TextField id="txtContrania"></TextField>
+				</View>
 			</View>
 			<View id="viewContenedorBotones">
 				<View class="viewContenedorBoton">
