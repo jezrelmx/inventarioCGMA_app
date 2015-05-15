@@ -23,7 +23,7 @@
 					<Button id="btnServidorPublico">Servidor Público</Button>
 				</View>
 				<View class="viewContenedorBoton">
-					<Button id="btnAdmin">Admin</Button>
+					<Button id="btnAdmin">Administrador</Button>
 				</View>
 			</View>
 		</View>
