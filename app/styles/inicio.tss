@@ -1,22 +1,72 @@
-
 '#win1[platform=ios formFactor=handheld]': {
 	backgroundColor: '#FFFFFF',
 	tintColor: '#C2BEBF'
 },
-'#winPoliciaCDMX[platform=ios formFactor=handheld]': {
+
+'#winInventarioCGMA[platform=ios formFactor=handheld]': {
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
-	title: 'Policía CDMX',
+	title: 'Inventario CGMA',
 	titleAttributes:  {
 		color: '#FFFFFF'
 	},
 	height: Ti.UI.FILL,
-	layout: 'vertical',
 	barColor: '#0E2843',
-	translucent: true
+	translucent: true,
+	layout: 'absolute',
 },
 
-'#winPoliciaCDMX[platform=android]': {
+'#winInventarioCGMA[platform=android]': {
 	height: Ti.UI.FILL,
-	layout: 'vertical',
 	backgroundColor: '#FFFFFF',
+	layout: 'absolute',
+},
+
+/**
+ * 	--------- CONTENIDO ---------
+ */
+"#viewContenedor": {
+	// backgroundColor: 'red',
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: 'vertical'
+},
+
+"#viewTitulo": {
+	// backgroundColor: 'blue',
+	width: Titanium.UI.FILL,
+	height: '20%',
+	layout: 'absolute'
+},
+
+"#viewFormulario": {
+	// backgroundColor: 'pink',
+	width: Titanium.UI.FILL,
+	height: '40%',
+	layout: 'vertical'
+},
+
+"#txtCorreo": {
+	width: '50%',
+	hintText: 'Correo institucional'
+},
+
+"#txtContrania": {
+	width: '50%',
+	hintText: 'Solo administrador'
+},
+
+"#viewContenedorBotones": {
+	// backgroundColor: 'navy',
+	width: Titanium.UI.FILL,
+	height: '20%',
+	layout: 'horizontal'
+},
+
+".viewContenedorBoton": {
+	// backgroundColor: 'navy',
+	width: '50%',
+	height: Titanium.UI.FILL,
+	layout: 'absolute'
 }
+
+
