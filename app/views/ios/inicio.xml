@@ -4,31 +4,32 @@
 			<!-- <LeftNavButton platform="ios">
 			<Button title="Inicio"/>
 			</LeftNavButton> -->
-			
+
 			<!-- ________ CONTENIDO ________ -->
-			
 			<View id="viewContenedor">
 				<View id="viewTitulo">
 					<Label id="lbTitulo">Inicio de sesión</Label>
 				</View>
 				<View id="viewFormulario">
-					<Label id="lbCorreo">Correo electrónico</Label>
-					<TextField id="txtCorreo"></TextField>
-					<Label id="lbCorreo">Contraseña</Label>
-					<TextField id="txtContrania"></TextField>
+					<View class="viewFormularioCampo">
+						<Label id="lbCorreo">Correo electrónico</Label>
+						<TextField id="txtCorreo"></TextField>
+					</View>
+					<View class="viewFormularioCampo">
+						<Label id="lbCorreo">Contraseña</Label>
+						<TextField id="txtContrania"></TextField>
+					</View>
 				</View>
 				<View id="viewContenedorBotones">
 					<View class="viewContenedorBoton">
-						<Button id="btnServidorPublico">Servidor Público</Button>	
+						<Button id="btnServidorPublico">Servidor Público</Button>
 					</View>
 					<View class="viewContenedorBoton">
-						<Button id="btnAdmin">Admin</Button>	
+						<Button id="btnAdmin">Admin</Button>
 					</View>
 				</View>
 			</View>
-			
-			
-			
+
 			<!-- <Widget src="policiaCDMX" name="contenido" id="contenido" /> -->
 		</Window>
 	</NavigationWindow>

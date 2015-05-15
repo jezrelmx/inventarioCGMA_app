@@ -12,18 +12,18 @@
 	height: Ti.UI.FILL,
 	barColor: '#0E2843',
 	translucent: true,
-	layout: 'absolute',
+	layout: 'absolute'
 },
 
 '#winInventarioCGMA[platform=android]': {
 	height: Ti.UI.FILL,
 	backgroundColor: '#FFFFFF',
-	layout: 'absolute',
+	layout: 'absolute'
 },
 
 /**
- * 	--------- CONTENIDO ---------
- */
+* 	--------- CONTENIDO ---------
+*/
 "#viewContenedor": {
 	// backgroundColor: 'red',
 	width: Titanium.UI.FILL,
@@ -42,6 +42,12 @@
 	// backgroundColor: 'pink',
 	width: Titanium.UI.FILL,
 	height: '40%',
+	layout: 'vertical'
+},
+
+".viewFormularioCampo": {
+	width: Titanium.UI.FILL,
+	height: '50%',
 	layout: 'vertical'
 },
 
