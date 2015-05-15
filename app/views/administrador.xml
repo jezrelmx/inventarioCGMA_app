@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="winadmin">
+		<!-- <ActionBar displayHomeAsUp="true" title="Policía CDMX" subtitle="Bienvenido" onHomeIconItemSelected="volver" /> -->
+				<View id="vistainfo">
+					<Label id="nombre">Jesus Gomez</Label>
+					<Label id="cargo">Subsecretario de Seguridad</Label>
+					<Label id="empleado">4446</Label>
+				</View>
+				<View id="vistabtnusuario">
+					<ImageView id="imgusuario" image:"images/users.png"></ImageView>
+					<Button id="btnusuarios">Usuarios</Button>
+				</View>
+				<View id="vistabtnarticulo">
+					<ImageView id="imgarticulo" image:"images/users.png"></ImageView>
+					<Button id="btnarticulos">Articulos</Button>
+				</View>
+	</Window>
+</Alloy>

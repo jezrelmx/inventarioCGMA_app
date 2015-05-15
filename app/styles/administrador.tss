@@ -1,0 +1,61 @@
+'#winadmin':{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	layout:'vertical'
+},
+
+'#vistainfo':{
+	backgroundColor:'blue',
+	width:Titanium.UI.FILL,
+	height:"40%",
+	layout:'vertical'
+},
+
+'#nombre':{
+	color:'white',
+	font:{
+		fontSize:'25dp'
+	}
+},
+
+'#cargo':{
+	color:'white',
+	font:{
+		fontSize:'25dp'
+	}
+},
+
+'#empleado':{
+	color:'white',
+	font:{
+		fontSize:'25dp'
+	}
+},
+
+'#vistabtnusuario':{
+	backgroundColor:'yellow',
+	widht:Titanium.UI.FILL,
+	height:"30%",
+	layout:'horizontal'
+},
+
+'#imgusuario':{
+	backgroundColor:'red',
+	width:"40%",
+	height:Titanium.UI.FILL,
+	// image:'images/users.png'
+},
+
+'#imgarticulo':{
+	backgroundColor:'green',
+	width:"40%",
+	height:Titanium.UI.FILL,
+	// image:'images/articulos.png'
+},
+
+'#vistabtnarticulo':{
+	backgroundColor:'navy',
+	width:Titanium.UI.FILL,
+	height:"30%",
+	layout:'horizontal'
+},
