@@ -9,17 +9,21 @@
 		</View>
 		<View class="viewSeparador"/>
 		<View id="vistabtnusuario">
-			<View id="view1">
+			<View class="viewimages">
 				<ImageView id="imgusuario"></ImageView>
 			</View>
-			<Button id="btnusuarios">Usuarios</Button>
+			<View class="viewbtn">
+				<Label class="txtBotonTitulo"> USuarios</Label>
+			</View>
 		</View>
 		<View class="viewSeparador"/>
 		<View id="vistabtnarticulo">
-			<View id="view2">
+			<View class="viewimages">
 				<ImageView id="imgarticulo"></ImageView>
 			</View>
-			<Button id="btnarticulos">Articulos</Button>
+			<View class="viewbtn">
+				<Label class="txtBotonTitulo"> Articulos </Label>
+			</View>
 		</View>
 		<View class="viewSeparador"/>
 	</Window>
