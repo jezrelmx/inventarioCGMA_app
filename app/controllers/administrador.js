@@ -22,4 +22,13 @@ function volver(){
 	$.empleado.setText(args.num_empleado);
 })();
 
-$.winadmin.open();
+if (OS_ANDROID) {
+    $.winadmin.open();    
+};
+
+if (OS_IOS) {
+    Alloy.Globals.winInventarioCGMA.openWindow($.winadmin);
+    // $.winadmin.open();    
+};
+
+

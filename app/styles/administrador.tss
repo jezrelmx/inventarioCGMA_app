@@ -1,13 +1,28 @@
-'#winadmin':{
+'#winadmin[platform=android]': {
+	backgroundColor: '#121212',
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.FILL,
 	layout:'vertical'
 },
 
+"#winadmin[platform=ios formFactor=handheld]": {
+	backgroundColor: '#121212',
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	title: 'Inventario CGMA',
+	titleAttributes:  {
+		color: '#FFFFFF'
+	},
+	width:Titanium.UI.FILL,
+	height: Ti.UI.FILL,
+	barColor: '#0E2843',
+	translucent: true,
+	layout: 'vertical'
+},
+
 '#vistainfo':{
 	// backgroundColor:'blue',
 	width:Titanium.UI.FILL,
-	height:"40%",
+	height:"30%",
 	layout:'vertical'
 },
 
@@ -76,5 +91,5 @@
 
 '.viewSeparador': {
 	width: Titanium.UI.FILL,
-	height: '10dp'
+	height: '2.5%'
 },
