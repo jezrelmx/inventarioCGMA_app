@@ -1,6 +1,6 @@
 <Alloy>
 	<Window id="winadmin">
-		<ActionBar displayHomeAsUp="true" title="Inventario CGMA" subtitle="Administrador" onHomeIconItemSelected="volver" />
+		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Administrador" onHomeIconItemSelected="volver" />
 		<View class="viewSeparador"/>
 		<View id="vistainfo">
 			<Label id="nombre">Nombre</Label>
