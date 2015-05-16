@@ -1,12 +1,35 @@
 <Alloy>
 	<NavigationWindow id="win1" platform="ios">
-		<Window id="winPoliciaCDMX">
-			<LeftNavButton platform="ios">
-				<Button title="Inicio"/>
-			</LeftNavButton>
-			<Label>Hola CGMA</Label>
-			<Button id="btnServidorPublico">Prueba Servidor Público</Button>
-			<Button id="btnAdmin">Prueba Admin</Button>
+		<Window id="winInventarioCGMA">
+			<!-- <LeftNavButton platform="ios">
+			<Button title="Inicio"/>
+			</LeftNavButton> -->
+
+			<!-- ________ CONTENIDO ________ -->
+			<View id="viewContenedor">
+				<View id="viewTitulo">
+					<Label id="lbTitulo">Inicio de sesión</Label>
+				</View>
+				<View id="viewFormulario">
+					<View class="viewFormularioCampo">
+						<Label id="lbCorreo">Correo electrónico</Label>
+						<TextField id="txtCorreo"></TextField>
+					</View>
+					<View class="viewFormularioCampo">
+						<Label id="lbCorreo">Contraseña</Label>
+						<TextField id="txtContrania"></TextField>
+					</View>
+				</View>
+				<View id="viewContenedorBotones">
+					<View class="viewContenedorBoton">
+						<Button id="btnServidorPublico">Servidor Público</Button>
+					</View>
+					<View class="viewContenedorBoton">
+						<Button id="btnAdmin">Administrador</Button>
+					</View>
+				</View>
+			</View>
+
 			<!-- <Widget src="policiaCDMX" name="contenido" id="contenido" /> -->
 		</Window>
 	</NavigationWindow>

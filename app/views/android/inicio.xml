@@ -1,9 +1,32 @@
 <Alloy>
-	<Window id="winPoliciaCDMX">
-		<ActionBar displayHomeAsUp="true" title="Policía CDMX" subtitle="Bienvenido" onHomeIconItemSelected="volver" />
+	<Window id="winInventarioCGMA">
+		<ActionBar displayHomeAsUp="true" title="Inventario CGMA" subtitle="Bienvenido" onHomeIconItemSelected="volver" />
 		<!-- <Widget src="policiaCDMX" name="contenido" id="contenido" /> -->
-		<Label>Hola CGMA</Label>
-		<Button id="btnServidorPublico">Prueba Servidor Público</Button>
-		<Button id="btnAdmin">Prueba Admin</Button>
+
+		<!-- ________ CONTENIDO ________ -->
+		<View id="viewContenedor">
+			<View id="viewTitulo">
+				<Label id="lbTitulo">Inicio de sesión</Label>
+			</View>
+			<View id="viewFormulario">
+				<View class="viewFormularioCampo">
+					<Label id="lbCorreo">Correo electrónico</Label>
+					<TextField id="txtCorreo"></TextField>
+				</View>
+				<View class="viewFormularioCampo">
+					<Label id="lbCorreo">Contraseña</Label>
+					<TextField id="txtContrania"></TextField>
+				</View>
+			</View>
+			<View id="viewContenedorBotones">
+				<View class="viewContenedorBoton">
+					<Button id="btnServidorPublico">Servidor Público</Button>
+				</View>
+				<View class="viewContenedorBoton">
+					<Button id="btnAdmin">Administrador</Button>
+				</View>
+			</View>
+		</View>
+
 	</Window>
 </Alloy>
