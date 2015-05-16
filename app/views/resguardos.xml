@@ -1,0 +1,38 @@
+<Alloy>
+	<Window id="container">
+		<View id="viewTop">
+			<View class="datosUser">
+				<Label class="infoUser">Nombre:</Label>
+			</View>
+			<View class="datosUser">
+				<Label class="infoUser">Cargo:</Label>
+			</View>
+			<View class="datosUser">
+				<Label class="infoUser">Numero Empleado:</Label>
+			</View>
+		</View>
+		<!-- Seccion de tabla -->
+		<View id="viewBottom">	
+			 <ListView id="list" defaultItemTemplate="template">
+	        	 <Templates>
+
+                <ItemTemplate name="template">
+                    <Label bindId="id" id="id" />
+                    <Label bindId="descripcion" id="descripcion" />
+                    <Label bindId="inventario" id="inventario" />
+                    <Label bindId="caracteristica" id="caracteristica" />
+                </ItemTemplate>
+
+            </Templates>
+             <ListSection id="listSection">
+             	 <ListItem class="listItem" id:text="1" descripcion:text="Inventario:" inventario:text="Descripcion:" caracteristica:text="Caracteristica:"/>
+             </ListSection>
+             
+    		</ListView>
+
+		</View>
+	</Window>
+</Alloy>
+
+
+

@@ -1,0 +1,97 @@
+'#container':{
+	backgroundColor:'black',
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	layout:'vertical'
+},
+
+'#viewTop':{
+	//backgroundColor:'red',
+	width:Titanium.UI.FILL,
+	height:'30%',
+	layout:'vertical'
+},
+'#viewBottom':{
+	//backgroundColor:'navy',
+	width:Titanium.UI.FILL,
+	height:'70%',
+	layout:'vertical'
+},
+
+'#list':{
+	//backgroundColor:'silver',
+	layout:'horizontal'	
+},
+
+'.datosUser':{
+	//backgroundColor:'green',
+	width:Titanium.UI.FILL,
+	height:'30%',
+	layout:'absolute'
+},
+
+
+'.infoUser':{
+	left:'10dp',
+	
+},
+
+
+'#listSection':{
+	backgroundColor:'blue'
+	
+},
+
+'.listItem':{
+		backgroundColor:'blue',
+		color:'white'
+},
+
+"#numero":{
+	//width: '50dp', height: '50dp', left: 0
+	color: 'white',
+    font: { fontFamily:'Arial', fontSize: '20dp', fontWeight:'bold' },
+    left: '5dp', top: 0
+},
+
+"#descripcion" : {
+    color: 'white',
+    font: { fontFamily:'Arial', fontSize: '20dp', fontWeight:'bold' },
+    left: '40dp', top: 0
+},
+"#inventario" : {
+    color: 'white',
+    font: { fontFamily:'Arial', fontSize: '14dp' },
+    left: '40dp', top: '25dp'
+},
+
+
+
+'#caracteristica':{
+	 color: 'white',
+    font: { fontFamily:'Arial', fontSize: '14dp' },
+    left: '150dp', top: '25dp'
+
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
