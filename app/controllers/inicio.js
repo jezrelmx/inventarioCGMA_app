@@ -34,7 +34,7 @@ $.btnServidorPublico.addEventListener('click', function() {
 });
 
 $.btnAdmin.addEventListener('click', function() {
-    alert($.txtCorreo.getValue());
+    console.log($.txtCorreo.getValue());
     var objCredenciales = {
         txtCorreo : $.txtCorreo.value,
         txtContrasenia : $.txtContrania.value
@@ -50,7 +50,7 @@ $.btnAdmin.addEventListener('click', function() {
             if (respuesta.code == 200) {
                 var objUsuario = JSON.parse(respuesta.data);
                 // alert(objUsuario.nombre);
-                // Alloy.createController('administrador', objUsuario);
+                Alloy.createController('administrador', objUsuario);
             } else {
                 alert('Intente de nuevo' + this.responseText);
             };
