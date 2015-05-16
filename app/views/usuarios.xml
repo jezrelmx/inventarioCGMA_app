@@ -49,5 +49,6 @@
 				</View>
 			</View>
 		</View>
+		<View class="viewSeparador"/>
 	</Window>
 </Alloy>

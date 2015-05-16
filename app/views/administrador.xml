@@ -1,22 +1,26 @@
 <Alloy>
 	<Window id="winadmin">
 		<ActionBar displayHomeAsUp="true" title="Inventario CGMA" subtitle="Administrador" onHomeIconItemSelected="volver" />
-				<View id="vistainfo">
-					<Label id="nombre">Nombre</Label>
-					<Label id="cargo">Cargo</Label>
-					<Label id="empleado">Empleado</Label>
-				</View>
-				<View id="vistabtnusuario">
-					<View id="view1">
-						<ImageView id="imgusuario"></ImageView>
-					</View>
-					<Button id="btnusuarios">Usuarios</Button>
-				</View>
-				<View id="vistabtnarticulo">
-					<View id="view2">
-						<ImageView id="imgarticulo"></ImageView>
-					</View>
-					<Button id="btnarticulos">Articulos</Button>
-				</View>
+		<View class="viewSeparador"/>
+		<View id="vistainfo">
+			<Label id="nombre">Nombre</Label>
+			<Label id="cargo">Cargo</Label>
+			<Label id="empleado">Empleado</Label>
+		</View>
+		<View class="viewSeparador"/>
+		<View id="vistabtnusuario">
+			<View id="view1">
+				<ImageView id="imgusuario"></ImageView>
+			</View>
+			<Button id="btnusuarios">Usuarios</Button>
+		</View>
+		<View class="viewSeparador"/>
+		<View id="vistabtnarticulo">
+			<View id="view2">
+				<ImageView id="imgarticulo"></ImageView>
+			</View>
+			<Button id="btnarticulos">Articulos</Button>
+		</View>
+		<View class="viewSeparador"/>
 	</Window>
 </Alloy>

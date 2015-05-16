@@ -36,7 +36,8 @@
 	// backgroundColor:'yellow',
 	widht:Titanium.UI.FILL,
 	height:"30%",
-	layout:'horizontal'
+	layout:'horizontal',
+	backgroundColor: '#433F3D',
 },
 
 '#view1':{
@@ -47,15 +48,17 @@
 
 '#imgusuario':{
 	// backgroundColor:'red',
-	width:"85%",
-	height:"80%",
+	width:"60%",
+	height:"55%",
 	image:'/images/user.png'
 },
+
 '#vistabtnarticulo':{
 	// backgroundColor:'navy',
 	width:Titanium.UI.FILL,
 	height:"30%",
-	layout:'horizontal'
+	layout:'horizontal',
+	backgroundColor: '#433F3D',
 },
 
 '#view2':{
@@ -66,8 +69,12 @@
 
 '#imgarticulo':{
 	// backgroundColor:'green',
-	width:"85%",
-	height:"80%",
+	width:"60%",
+	height:"55%",
 	image:'/images/articulos.png'
 },
 
+'.viewSeparador': {
+	width: Titanium.UI.FILL,
+	height: '10dp'
+},

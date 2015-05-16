@@ -7,12 +7,12 @@
 
 '.viewSeparador': {
 	width: Titanium.UI.FILL,
-	height: '10dp'
+	height: '2.5%'
 },
 
 '.wrapContenidoBoton': {
 	width: Titanium.UI.FILL,
-	height: '33%',
+	height: '30%',
 	layout: 'horizontal',
 	backgroundColor: '#433F3D',
 },
