@@ -1,6 +1,6 @@
 <Alloy>
 	<Window id="winUsuarios">
-		<ActionBar displayHomeAsUp="true" title="Inventario CGMA" subtitle="Usuarios" onHomeIconItemSelected="volver" />
+		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Usuarios" onHomeIconItemSelected="volver" />
 		<View class="viewSeparador"/>
 		<View class="wrapContenidoBoton" onClick="abrirAltaUsuario">
 			<View class="viewImgBoton">

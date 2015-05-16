@@ -64,3 +64,15 @@
 	},
 	width:'90%'
 },
+
+'#imgAltaUsuario':{
+	image:"/images/add.png"
+},
+
+'#imgBajaUsuario':{
+	image:"/images/remove.png"
+},
+
+'#imgConsultaUsuario':{
+	image:"/images/search.png"
+}
