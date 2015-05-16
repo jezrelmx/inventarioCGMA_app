@@ -16,4 +16,10 @@ function abrirConsultaUsuario(){
 	alert("Ventana consulta de usuarios");
 };
 
-$.winUsuarios.open();
+if (OS_ANDROID) {
+    $.winUsuarios.open();
+};
+
+if (OS_IOS) {
+    Alloy.Globals.winInventarioCGMA.openWindow($.winUsuarios);
+};

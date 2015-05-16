@@ -1,9 +1,24 @@
-'#winUsuarios':{
+'#winUsuarios[platform=android]': {
+	backgroundColor: '#121212',
 	height:Titanium.UI.FILL,
 	width:Titanium.UI.FILL,
-	layout:"horizontal",
-	backgroundColor: '#1A1B1C'
+	layout:"vertical"	
 },
+
+"#winUsuarios[platform=ios formFactor=handheld]": {
+	backgroundColor: '#121212',
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	title: 'Inventario CGMA',
+	titleAttributes:  {
+		color: '#FFFFFF'
+	},
+	width:Titanium.UI.FILL,
+	height: Ti.UI.FILL,
+	barColor: '#0E2843',
+	translucent: true,
+	layout: 'vertical'
+},
+
 
 '.viewSeparador': {
 	width: Titanium.UI.FILL,

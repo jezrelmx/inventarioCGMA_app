@@ -28,7 +28,6 @@ if (OS_ANDROID) {
 
 if (OS_IOS) {
     Alloy.Globals.winInventarioCGMA.openWindow($.winadmin);
-    // $.winadmin.open();    
 };
 
 
