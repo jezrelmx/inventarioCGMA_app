@@ -1,4 +1,133 @@
+'#winAltaUsuario[platform=android]': {
+	backgroundColor: '#FFFFFF',
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	layout:"absolute"	
+},
 
-".container" : {
-  
+"#winAltaUsuario[platform=ios formFactor=handheld]": {
+	backgroundColor: '#FFFFFF',
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	title: 'Inventario CGMA',
+	titleAttributes:  {
+		color: '#FFFFFF'
+	},
+	width:Titanium.UI.FILL,
+	height: Ti.UI.FILL,
+	barColor: '#0E2843',
+	translucent: true,
+	layout: 'absolute'
+},
+
+'#scrollUnico': {
+	width: Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	layout: 'horizontal',
+	scrollType: 'vertical'
+},
+
+'.scrollItem': {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+},
+
+'.contenedor': {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
+	layout: 'vertical'
+},
+
+'#wrapContenedor': {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	layout: 'absolute'
+},
+
+/**
+* 	---------------------------- FORMULARIO ----------------------------
+*/
+'#viewFormulario':{
+	backgroundColor: '#F0F0F0',
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	zIndex: 2
+},
+
+'.cajon': {
+	width: Titanium.UI.FILL,
+	height: "48dp",
+	top: "4dp",
+	bottom: "4dp",
+	layout: 'horizontal'
+},
+
+'.txtField': {
+	color: "#121212",
+	backgroundColor: "#FFFFFF",
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	maxLength: 50,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+/**
+* 	------------- PICKER DE IOS -----------------
+*/
+'#cajonDelegacionIOS[platform=ios formFactor=handheld]': {
+	backgroundColor: '#FFFFFF',
+	width: Titanium.UI.FILL,
+	height: "48dp",
+	top: "4dp",
+	bottom: "4dp",
+	layout: 'absolute'
+},
+
+'#txtPickerDelegacion[platform=ios formFactor=handheld]': {
+	color: '#121212',
+	left: 0,
+	opacity: 0.2
+},
+
+"#cancel": {
+	top: 5,
+	left: 5,
+	width: Ti.UI.SIZE,
+	height: 35
+},
+"#done": {
+	top: 5,
+	right: 5,
+	width: Ti.UI.SIZE,
+	height: 35,
+	systemButton: Ti.UI.iPhone.SystemButton.DONE
+},
+
+/**
+* 	------------- TERMINA PICKER DE IOS -----------------
+*/
+
+'#viewPie':{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	right: 0,
+	layout: "absolute"
+},
+
+'#btnAccion': {
+	top: "10dp",
+	height: "48dp",
+	width: '120dp',
+	backgroundColor: '#CC1A78',
+	right: 0
+},
+
+'#lbAccion': {
+	text: "Enviar",
+	color: "#FFFFFF"
 }

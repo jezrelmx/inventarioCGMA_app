@@ -1,5 +1,59 @@
 <Alloy>
 	<Window id="winAltaUsuario">
-		
+		<ScrollView id="scrollUnico">
+			<View class="scrollItem">
+				<View id="wrapContenedor">
+					<View class="contenedor">
+						<View id="viewFormulario">
+							<View  id="cajonTxtCalle" class="cajon">
+								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							</View>
+							<View  id="cajonTxtCalle" class="cajon">
+								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							</View>
+							<View  id="cajonTxtCalle" class="cajon">
+								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							</View>
+							<View  id="cajonTxtCalle" class="cajon">
+								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							</View>
+							<View  id="cajonTxtCalle" class="cajon">
+								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							</View>
+							<View platform="android" class="cajon">
+								<!-- Se sugiere hacer binding con un arreglo desde el controlador para validad con los id's -->
+								<Picker id="pickerDelegacion" class="txtField">
+									<PickerRow title="Delegación"/>
+									<PickerRow title="Álvaro Obregón"/>
+									<PickerRow title="Azcapotzalco"/>
+									<PickerRow title="Benito Juárez"/>
+									<PickerRow title="Cuajimalpa de Morelos"/>
+									<PickerRow title="Coyoacán"/>
+									<PickerRow title="Cuauhtémoc"/>
+									<PickerRow title="Gustavo A. Madero"/>
+									<PickerRow title="Iztacalco"/>
+									<PickerRow title="Iztapalapa"/>
+									<PickerRow title="La Magadalena Contreras"/>
+									<PickerRow title="Miguel Hidalgo"/>
+									<PickerRow title="Milpa Alta"/>
+									<PickerRow title="Tláhuac"/>
+									<PickerRow title="Tlalpan"/>
+									<PickerRow title="Venustiano Carranza"/>
+									<PickerRow title="Xochimilco"/>
+								</Picker>
+							</View>
+							<View id="cajonDelegacionIOS" platform="ios" formFactor="handheld">
+								<Label id="txtPickerDelegacion">Delegación</Label>
+							</View>
+						</View>
+						<View id="viewPie">
+							<View id="btnAccion">
+								<Label id="lbAccion">Enviar</Label>
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+		</ScrollView>
 	</Window>
 </Alloy>

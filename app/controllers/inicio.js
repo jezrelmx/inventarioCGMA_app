@@ -28,7 +28,6 @@ function salirinventarioCGMA() {
 };
 
 $.btnServidorPublico.addEventListener('click', function() {
-
     // Alloy.createController('resguardos');
     alert('resguardos');
 });
@@ -43,13 +42,11 @@ $.btnAdmin.addEventListener('click', function() {
 
     var url = url_base + "/inventarioCGMA/Index_c/inicia_sesion";
     var client = Ti.Network.createHTTPClient({
-        // function called when the response data is available
         onload : function(e) {
             var respuesta = JSON.parse(this.responseText);
             console.log('DOC >>>>>>>>>>>>> ' + respuesta);
             if (respuesta.code == 200) {
                 var objUsuario = JSON.parse(respuesta.data);
-                // alert(objUsuario.nombre);
                 Alloy.createController('administrador', objUsuario);
             } else {
                 alert('Intente de nuevo' + this.responseText);
