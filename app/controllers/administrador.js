@@ -1,15 +1,15 @@
 var args = arguments[0] || {};
 console.log(JSON.stringify(args));
 
-$.vistabtnusuario.addEventListener('click',function(){
+function abrirusuarios(){
 	Alloy.createController('usuarios');
 	// alert("Vista usuarios");
-});
+};
 
-$.vistabtnarticulo.addEventListener('click',function(){
+function abrirarticulos(){
 	Alloy.createController('articulos');
 	// alert("Vista articulos");
-});
+};
 
 function volver(){
 	$.winadmin.close();
