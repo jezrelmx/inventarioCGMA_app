@@ -7,8 +7,8 @@ $.vistabtnusuario.addEventListener('click',function(){
 });
 
 $.vistabtnarticulo.addEventListener('click',function(){
-	// Alloy.createController('articulos');
-	alert("Vista articulos");
+	Alloy.createController('articulos');
+	// alert("Vista articulos");
 });
 
 function volver(){
