@@ -55,9 +55,16 @@
 	backgroundColor: '#433F3D',
 },
 
+'#view1':{
+	// backgroundColor:'red',
+	width:"40%",
+	height:Titanium.UI.FILL,
+},
 
 '#imgusuario':{
 	// backgroundColor:'red',
+	width:"60%",
+	height:"55%",
 	image:'/images/user.png'
 },
 
@@ -69,33 +76,20 @@
 	backgroundColor: '#433F3D',
 },
 
+'#view2':{
+	// backgroundColor:'red',
+	width:"40%",
+	height:Titanium.UI.FILL,
+},
+
 '#imgarticulo':{
 	// backgroundColor:'green',
+	width:"60%",
+	height:"55%",
 	image:'/images/articulos.png'
 },
 
 '.viewSeparador': {
 	width: Titanium.UI.FILL,
 	height: '2.5%'
-},
-
-'.viewimages':{
-	width: '35%',
-	height: Titanium.UI.FILL,
-	layout: 'absolute'
-}
-
-'.viewbtn':{
-	width: '75%',
-	height: '70dp',
-	layout: 'vertical'
-}
-
-'.txtBotonTitulo': {
-	left: '10dp',
-	top: '3dp',
-	color: '#BCC4CA',
-	font: {
-		fontSize: '25dp'
-	}
 },

@@ -41,7 +41,7 @@ $.btnAdmin.addEventListener('click', function() {
     };
     console.log('usuario ' + objCredenciales.txtCorreo + ' constrasenia ' + objCredenciales.txtContrasenia);
 
-    var url = "http://192.168.3.114/inventarioCGMA/Index_c/inicia_sesion";
+    var url = url_base + "/inventarioCGMA/Index_c/inicia_sesion";
     var client = Ti.Network.createHTTPClient({
         // function called when the response data is available
         onload : function(e) {
@@ -64,8 +64,8 @@ $.btnAdmin.addEventListener('click', function() {
 
     client.open('POST', url);
     client.send({
-        txtCorreo : 'usuario1',
-        txtContrasenia : '000'
+        txtCorreo : 'evaldezj@df.gob.mx',
+        txtContrasenia : '123456'
     });
 });
 

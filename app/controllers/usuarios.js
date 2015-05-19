@@ -5,7 +5,7 @@ function volver(){
 };
 
 function abrirAltaUsuario(){
-	alert("Ventana alta de usuarios");
+    Alloy.createController('altaUsuario');
 };
 
 function abrirBajaUsuario(){
