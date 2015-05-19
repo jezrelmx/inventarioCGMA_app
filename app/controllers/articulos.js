@@ -9,7 +9,8 @@ function abrirAltaUsuario(){
 };
 
 function abrirBajaUsuario(){
-	alert("Ventana baja de usuarios");
+	// alert("Ventana baja de usuarios");
+	Alloy.createController('bajaArticulo');
 };
 
 function abrirConsultaUsuario(){

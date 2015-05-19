@@ -1,6 +1,17 @@
 <Alloy>
-	<Window >
-		<View class="container">
+	<Window id="winbajaArt">
+		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Baja Articulo" onHomeIconItemSelected="volver" />
+		<View class="viewseparator"/>
+		<View id="viewUp">
+			<Label id="lbltitulo">Baja Articulo(s)</Label>
+			<View id="viewtxt">
+				<TextField id="txtinventario" hintText="Inventario"></TextField>
+			</View>
 		</View>
+		<View class="viewseparator"/>
+		<View id="viewDown">
+			<Button id="btnbaja" onClick="abrirVerificarBaja"> Cambiar </Button>
+		</View>
+		<View class="viewseparator"/>
 	</Window>
 </Alloy>
