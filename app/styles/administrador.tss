@@ -20,79 +20,43 @@
 },
 
 '#vistainfo':{
-	// backgroundColor:'blue',
+	backgroundColor:'#121212',
 	width:Titanium.UI.FILL,
 	height:"30%",
 	layout:'vertical'
 },
 
-'#nombre':{
+'.lbltexto':{
 	color:'white',
 	font:{
 		fontSize:'25dp'
 	}
 },
 
-'#cargo':{
-	color:'white',
-	font:{
-		fontSize:'25dp'
-	}
-},
-
-'#empleado':{
-	color:'white',
-	font:{
-		fontSize:'25dp'
-	}
-},
-
-'#vistabtnusuario':{
-	// backgroundColor:'yellow',
-	widht:Titanium.UI.FILL,
-	height:"30%",
-	layout:'horizontal',
-	backgroundColor: '#433F3D',
-},
-
-'#imgusuario':{
-	// backgroundColor:'red',
-	width:"60%",
-	height:"55%",
-	image:'/images/user.png'
-},
-
-'#vistabtnarticulo':{
-	// backgroundColor:'navy',
-	width:Titanium.UI.FILL,
-	height:"30%",
-	layout:'horizontal',
-	backgroundColor: '#433F3D',
-},
-
-
-'#imgarticulo':{
-	// backgroundColor:'green',
-	width:"60%",
-	height:"55%",
-	image:'/images/articulos.png'
-},
-
-'.viewSeparador': {
+'.vistatxtbtn': {
 	width: Titanium.UI.FILL,
-	height: '2.5%'
+	height: '30%',
+	layout: 'horizontal',
+	backgroundColor: '#433F3D',
 },
 
-'.viewimages': {
-	width: '35%',
+'.viewImgBoton': {
+	width: '30%',
 	height: Titanium.UI.FILL,
 	layout: 'absolute'
 },
 
-'.viewbtn': {
-	width: '75%',
-	height: '70dp',
-	layout: 'vertical'
+'.viewSeparador': {
+	backgroundColor:"black",
+	width: Titanium.UI.FILL,
+	height: '2.5%'
+},
+
+'.viewTxtSeccion': {
+	width: Titanium.UI.FILL,
+	height: '35dp',
+	layout: 'absolute',
+	top: '35%'
 },
 
 '.txtBotonTitulo': {
@@ -102,4 +66,12 @@
 	font: {
 		fontSize: '25dp'
 	}
+},
+
+'#imgUsuario':{
+	image:"/images/user.png"
+},
+
+'#imgArticulo':{
+	image:"/images/articulos.png"
 },

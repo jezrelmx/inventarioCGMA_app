@@ -3,26 +3,28 @@
 		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Administrador" onHomeIconItemSelected="volver" />
 		<View class="viewSeparador"/>
 		<View id="vistainfo">
-			<Label id="nombre">Nombre</Label>
-			<Label id="cargo">Cargo</Label>
-			<Label id="empleado">Empleado</Label>
+			<Label id="nombre" class="lbltexto">Nombre</Label>
+			<View class="viewSeparador"/>
+			<Label id="cargo" class="lbltexto">Cargo</Label>
+			<View class="viewSeparador"/>
+			<Label id="empleado" class="lbltexto">Empleado</Label>
 		</View>
 		<View class="viewSeparador"/>
-		<View id="vistabtnusuario">
-			<View class="viewimages">
-				<ImageView id="imgusuario"></ImageView>
+		<View class="vistatxtbtn" onClick="abrirusuarios">
+			<View class="viewImgBoton">
+				<ImageView id="imgUsuario"></ImageView>
 			</View>
-			<View class="viewbtn">
-				<Label class="txtBotonTitulo"> USuarios</Label>
+			<View class="viewTxtSeccion">
+				<Label class="txtBotonTitulo">Usuarios</Label>
 			</View>
 		</View>
 		<View class="viewSeparador"/>
-		<View id="vistabtnarticulo">
-			<View class="viewimages">
-				<ImageView id="imgarticulo"></ImageView>
+		<View class="vistatxtbtn" onClick="abrirarticulos">
+			<View class="viewImgBoton">
+				<ImageView id="imgArticulo"></ImageView>
 			</View>
-			<View class="viewbtn">
-				<Label class="txtBotonTitulo"> Articulos </Label>
+			<View class="viewTxtSeccion">
+				<Label class="txtBotonTitulo">Articulos</Label>
 			</View>
 		</View>
 		<View class="viewSeparador"/>

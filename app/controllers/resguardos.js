@@ -27,4 +27,3 @@ $.list.sections = [$.listSection];
 $.container.open();
 
 
-
