@@ -5,41 +5,35 @@
 				<View id="wrapContenedor">
 					<View class="contenedor">
 						<View id="viewFormulario">
-							<View  id="cajonTxtCalle" class="cajon">
-								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							<View  id="cajonTxtNombre" class="cajon">
+								<TextField  id="txtNombre" class="txtField" hintText="Nombre" />
 							</View>
-							<View  id="cajonTxtCalle" class="cajon">
-								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							<View  id="cajonTxtApPaterno" class="cajon">
+								<TextField  id="txtApPaterno" class="txtField" hintText="Apellido paterno" />
 							</View>
-							<View  id="cajonTxtCalle" class="cajon">
-								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							<View  id="cajonTxtApMaterno" class="cajon">
+								<TextField  id="txtApMaterno" class="txtField" hintText="Apellido materno" />
 							</View>
-							<View  id="cajonTxtCalle" class="cajon">
-								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							<View  id="cajonTxtCargo" class="cajon">
+								<TextField  id="txtCargo" class="txtField" hintText="Cargo" />
 							</View>
-							<View  id="cajonTxtCalle" class="cajon">
-								<TextField  id="txtCalle" class="txtField" hintText="Calle" />
+							<View  id="cajonTxtNumEmpleado" class="cajon">
+								<TextField  id="txtNumEmpleado" class="txtField" hintText="Número de empleado" />
+							</View>
+							<View  id="cajonTxtCorreoElectronico" class="cajon">
+								<TextField  id="txtCorreoElectronico" class="txtField" hintText="Correo electrónico" />
+							</View>
+							<View  id="cajonTxtContrasenia" class="cajon">
+								<TextField  id="txtContrasenia" class="txtField" hintText="Contraseña" />
 							</View>
 							<View platform="android" class="cajon">
-								<!-- Se sugiere hacer binding con un arreglo desde el controlador para validad con los id's -->
-								<Picker id="pickerDelegacion" class="txtField">
-									<PickerRow title="Delegación"/>
-									<PickerRow title="Álvaro Obregón"/>
-									<PickerRow title="Azcapotzalco"/>
-									<PickerRow title="Benito Juárez"/>
-									<PickerRow title="Cuajimalpa de Morelos"/>
-									<PickerRow title="Coyoacán"/>
-									<PickerRow title="Cuauhtémoc"/>
-									<PickerRow title="Gustavo A. Madero"/>
-									<PickerRow title="Iztacalco"/>
-									<PickerRow title="Iztapalapa"/>
-									<PickerRow title="La Magadalena Contreras"/>
-									<PickerRow title="Miguel Hidalgo"/>
-									<PickerRow title="Milpa Alta"/>
-									<PickerRow title="Tláhuac"/>
-									<PickerRow title="Tlalpan"/>
-									<PickerRow title="Venustiano Carranza"/>
-									<PickerRow title="Xochimilco"/>
+								<Picker id="pickerDireccionEjecutiva" class="txtField">
+									
+								</Picker>
+							</View>
+							<View platform="android" class="cajon">
+								<Picker id="pickerTipoUsuario" class="txtField">
+									
 								</Picker>
 							</View>
 							<View id="cajonDelegacionIOS" platform="ios" formFactor="handheld">

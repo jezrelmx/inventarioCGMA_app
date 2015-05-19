@@ -1,19 +1,57 @@
 var args = arguments[0] || {};
 
+/**
+ * ----------------- HTTP CLIENT CON PARSER PARA JSON -----------------
+ */
 var url = url_base + "/inventarioCGMA/altaUsuario_c/catalogoUsuarios";
-// console.log("URL ------ " + url);
 var client = Ti.Network.createHTTPClient({
     onload : function(e) {
         var respuesta = this.responseText;
         var objRespuesta = JSON.parse(respuesta);
         if (objRespuesta.code == 200) {
-            console.log('DATOS ------- ' + objRespuesta.data);
-            alert(objRespuesta.data);
+            var rowsTipoUsuario = [];
+            var rowsDireccionEjecutiva = [];
+            var row = Ti.UI.createPickerRow({
+                id : 0,
+                title : 'Tipo de usuario'
+            });
+
+            rowsTipoUsuario.push(row);
+            
+            var row = Ti.UI.createPickerRow({
+                id : 0,
+                title : 'Dirección ejecutiva'
+            });
+
+            rowsDireccionEjecutiva.push(row);
+
             for (var key in objRespuesta.data.cat_tipo_usuario) {
                 var attrName = key;
                 var attrValue = objRespuesta.data.cat_tipo_usuario[key];
-                console.log(' attrName  ' + attrName + '  attrValue ' + attrValue.descripcion);
+
+                var row = Ti.UI.createPickerRow({
+                    id : attrName,
+                    title : attrValue.descripcion
+                });
+
+                rowsTipoUsuario.push(row);
             }
+
+            $.pickerTipoUsuario.add(rowsTipoUsuario);
+            
+            for (var key in objRespuesta.data.cat_direccion_ejecutiva) {
+                var attrName = key;
+                var attrValue = objRespuesta.data.cat_direccion_ejecutiva[key];
+
+                var row = Ti.UI.createPickerRow({
+                    id : attrName,
+                    title : attrValue.descripcion
+                });
+
+                rowsDireccionEjecutiva.push(row);
+            }
+            $.pickerDireccionEjecutiva.add(rowsDireccionEjecutiva);
+            
             if (OS_ANDROID) {
                 $.winAltaUsuario.open();
             };
