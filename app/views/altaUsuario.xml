@@ -28,11 +28,17 @@
 							</View>
 							<View platform="android" class="cajon">
 								<Picker id="pickerDireccionEjecutiva" class="txtField">
-									
+									<PickerColumn id="column1"></PickerColumn>
 								</Picker>
 							</View>
 							<View platform="android" class="cajon">
-								<Picker id="pickerTipoUsuario" class="txtField">
+								<Picker id="pickerTipoUsuario" class="txtField"></Picker>
+								<Picker id="picker" selectionIndicator="true">
+									
+										<PickerRow title="Bananas"/>
+										<PickerRow title="Strawberries"/>
+										<PickerRow title="Mangos"/>
+										<PickerRow title="Grapes"/>
 									
 								</Picker>
 							</View>

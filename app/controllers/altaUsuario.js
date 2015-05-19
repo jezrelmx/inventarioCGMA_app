@@ -37,7 +37,7 @@ var client = Ti.Network.createHTTPClient({
                 rowsTipoUsuario.push(row);
             }
 
-            $.pickerTipoUsuario.add(rowsTipoUsuario);
+            // $.pickerTipoUsuario.add(rowsTipoUsuario);
             
             for (var key in objRespuesta.data.cat_direccion_ejecutiva) {
                 var attrName = key;
@@ -51,6 +51,7 @@ var client = Ti.Network.createHTTPClient({
                 rowsDireccionEjecutiva.push(row);
             }
             $.pickerDireccionEjecutiva.add(rowsDireccionEjecutiva);
+            
             
             if (OS_ANDROID) {
                 $.winAltaUsuario.open();
