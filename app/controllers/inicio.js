@@ -28,8 +28,8 @@ function salirinventarioCGMA() {
 };
 
 $.btnServidorPublico.addEventListener('click', function() {
-    // Alloy.createController('resguardos');
-    alert('resguardos');
+    Alloy.createController('resguardos');
+    // alert('resguardos');
 });
 
 $.btnAdmin.addEventListener('click', function() {
