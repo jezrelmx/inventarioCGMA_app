@@ -1,0 +1,61 @@
+<Alloy>
+	<Window id="winUsuarios">
+		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Alta Articulos" onHomeIconItemSelected="volver" />
+		<!-- <View class="viewSeparador"/> -->
+		<View class="wrapContenidoBoton" onClick="abrirAltaUsuario">
+			<View class="viewImgBoton">
+				<ImageView id="imgAltaArticulo"></ImageView>
+			</View>
+			<View class="viewTxtBoton">
+				<View class="viewTxtSeccion">
+					<Label class="txtBotonTitulo">Alta Articulo (s)</Label>
+				</View>
+				<View class="viewTxtInfo">
+					<View class="viewTxtBotonSub1">
+						<Label class="txtBotonSub1">Registro de nuevos articulos</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+		<View class="viewSeparador"/>
+		<View class="wrapContenidoBoton" onClick="abrirBajaUsuario">
+			<View class="viewImgBoton">
+				<ImageView id="imgBajaArticulo"></ImageView>
+			</View>
+			<View class="viewTxtBoton">
+				<View class="viewTxtSeccion">
+					<Label class="txtBotonTitulo">Baja Articulo (s)</Label>
+				</View>
+				<View class="viewTxtInfo">
+					<View class="viewTxtBotonSub1">
+						<Label class="txtBotonSub1">Modifica el estatus de articulos</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+		<View class="viewSeparador"/>
+		<View class="wrapContenidoBoton" onClick="abrirConsultaUsuario">
+			<View class="viewImgBoton">
+				<ImageView id="imgConsultaArticulo"></ImageView>
+			</View>
+			<View class="viewTxtBoton">
+				<View class="viewTxtSeccion">
+					<Label class="txtBotonTitulo">Consulta Articulo (s)</Label>
+				</View>
+				<View class="viewTxtInfo">
+					<View class="viewTxtBotonSub1">
+						<Label class="txtBotonSub1">Consulta resguardos de articulos</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+		<!-- <View class="viewSeparador"/> -->
+	</Window>
+</Alloy>
+
+
+
+
+
+
+

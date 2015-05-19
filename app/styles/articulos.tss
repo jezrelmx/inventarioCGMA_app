@@ -1,0 +1,104 @@
+'#winUsuarios[platform=android]': {
+	backgroundColor: 'white',
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	layout:"vertical"	
+},
+
+"#winUsuarios[platform=ios formFactor=handheld]": {
+	backgroundColor: 'white',
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	title: 'Inventario CGMA',
+	titleAttributes:  {
+		color: '#FFFFFF'
+	},
+	width:Titanium.UI.FILL,
+	height: Ti.UI.FILL,
+	barColor: '#0E2843',
+	translucent: true,
+	layout: 'vertical'
+},
+
+
+'.viewSeparador': {
+	width: Titanium.UI.FILL,
+	height: '1%',
+	backgroundColor:'#FF0066'
+
+	
+},
+
+'.wrapContenidoBoton': {
+	width: Titanium.UI.FILL,
+	height: '30%',
+	layout: 'horizontal',
+	backgroundColor: 'white',
+},
+
+'.viewImgBoton': {
+	width: '25%',
+	height: Titanium.UI.FILL,
+	layout: 'absolute'
+},
+
+'.viewTxtBoton': {
+	width: '75%',
+	height: '70dp',
+	layout: 'vertical'
+},
+
+'.viewTxtSeccion': {
+	width: Titanium.UI.FILL,
+	height: '35dp',
+	layout: 'absolute'
+},
+
+'.viewTxtInfo': {
+	width: Titanium.UI.FILL,
+	height: '45dp',
+	layout: 'horizontal'
+},
+
+'.viewTxtBotonSub1': {
+	width: '60%',
+	height: Titanium.UI.FILL,
+},
+
+'.txtBotonTitulo': {
+	left: '10dp',
+	top: '3dp',
+	color: '#FF0066',
+	font: {
+		fontSize: '25dp'
+	}
+},
+
+'.txtBotonSub1': {
+	top: 0,
+	left: '10dp',
+	color: '#FF0066',
+	font: {
+		fontSize: '15dp'
+	},
+	width:'90%'
+},
+
+'#imgAltaArticulo':{
+	image:"/images/altaArticulo.png"
+},
+
+'#imgBajaArticulo':{
+	image:"/images/bajaArticulo.png"
+},
+
+'#imgConsultaArticulo':{
+	image:"/images/consultaArticulo.png"
+}
+
+
+
+
+
+
+
+
