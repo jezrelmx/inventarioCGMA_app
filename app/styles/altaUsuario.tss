@@ -76,6 +76,11 @@
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
 },
 
+'#pickerDireccionEjecutiva[platform=android]': {
+	backgroundColor: '#FFFFFF',
+	width: Titanium.UI.FILL,
+},
+
 /**
 * 	------------- PICKER DE IOS -----------------
 */
