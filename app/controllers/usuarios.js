@@ -13,7 +13,8 @@ function abrirBajaUsuario(){
 };
 
 function abrirConsultaUsuario(){
-	alert("Ventana consulta de usuarios");
+    Alloy.createController('consultaUsuario');
+	// alert("Ventana consulta de usuarios");
 };
 
 if (OS_ANDROID) {

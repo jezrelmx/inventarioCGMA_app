@@ -6,6 +6,7 @@
 				<View id="wrapContenedor">
 					<View class="contenedor">
 						<View id="viewFormulario">
+							<Label>Proporcione los datos</Label>
 							<View  id="cajonTxtNombre" class="cajon">
 								<TextField  id="txtNombre" class="txtField" hintText="Nombre" />
 							</View>
