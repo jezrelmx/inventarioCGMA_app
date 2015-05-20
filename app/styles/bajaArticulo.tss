@@ -21,14 +21,14 @@
 },
 
 '#viewUp':{
-	// backgroundColor:"blue",
+	backgroundColor:'#CC1A78',
 	height:"45.5%",
 	width:Titanium.UI.FILL,
 	layout:"vertical"
 },
 
 '#viewDown':{
-	// backgroundColor:"navy",
+	backgroundColor:'#CC1A78',
 	height:"45.5%",
 	width:Titanium.UI.FILL,
 	layout:"vertical"
@@ -38,11 +38,11 @@
 	height:'3%',
 	width:Titanium.UI.FILL,
 	layout:'absolute',
-	backgroundColor:'#000000'
+	backgroundColor:'#F0F0F0'
 }
 
 '#lbltitulo':{
-	color: '#BCC4CA',
+	color: '#ffffff',
 	font: {
 		fontSize: '25dp'
 	}
@@ -57,18 +57,20 @@
 '#txtinventario':{
 	height:Titanium.UI.SIZE,
 	width:"80%",
-	color:"#121212",
+	color:"#ffffff",
 	font: {
 		fontSize: '20dp'
 	},
 	bottom:'10dp',
-	textAlign:'center'
+	textAlign:'center',
+	
 }
 
 '#btnbaja':{
+	backgroundColor:'#d3d4d4',
 	height:Titanium.UI.SIZE,
 	width:'60%',
-	color: '#BCC4CA',
+	color: '#FFFFFF',
 	font: {
 		fontSize: '25dp'
 	},
