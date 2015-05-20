@@ -1,7 +1,7 @@
 <Alloy>
 	<Window id="winUsuarios">
-		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Alta Articulos" onHomeIconItemSelected="volver" />
-		<!-- <View class="viewSeparador"/> -->
+		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Articulos" onHomeIconItemSelected="volver" />
+	    <View class="viewSeparador"/>
 		<View class="wrapContenidoBoton" onClick="abrirAltaUsuario">
 			<View class="viewImgBoton">
 				<ImageView id="imgAltaArticulo"></ImageView>
@@ -49,7 +49,6 @@
 				</View>
 			</View>
 		</View>
-		<!-- <View class="viewSeparador"/> -->
 	</Window>
 </Alloy>
 
