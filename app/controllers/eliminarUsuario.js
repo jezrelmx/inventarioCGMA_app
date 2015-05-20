@@ -30,6 +30,7 @@ $.winConsultaUsuario.addEventListener('close', function(evento) {
  * ----------------- HTTP CLIENT PARA TRAER LA LISTA DE USUARIOS REGISTRADOS -----------------
  */
 var url = url_base + "/inventarioCGMA/consultar_usuario_c";
+console.log('URL WS LISTA USUARIOS ---- ' + url);
 var client = Ti.Network.createHTTPClient({
     onload : function(e) {
         var respuesta = this.responseText;
@@ -38,6 +39,7 @@ var client = Ti.Network.createHTTPClient({
         if (objRespuesta.code == 200) {
             var listaUsuarios = objRespuesta.data;
             for (var key in listaUsuarios) {
+                console.log(' --- ' + JSON.stringify(listaUsuarios[key]));
                 items.push({
                     lbNombre : {
                         text : listaUsuarios[key].nombre
@@ -61,7 +63,7 @@ var client = Ti.Network.createHTTPClient({
                         text : listaUsuarios[key].email
                     },
                     lbTipoUsuario : {
-                        text : listaUsuarios[key].tipo_usuario
+                        text : diccionarioTipoUsuario[listaUsuarios[key].id_tipo_usuario]
                     },
                     lbEstado : {
                         text : diccionarioEstado[listaUsuarios[key].estatus]
@@ -84,6 +86,8 @@ var client = Ti.Network.createHTTPClient({
             if (OS_IOS) {
                 Alloy.Globals.winInventarioCGMA.openWindow($.winConsultaUsuario);
             };
+
+            // Alloy.createController('administrador', objUsuario);
         } else {
             alert('Intente de nuevo' + this.responseText);
         };
