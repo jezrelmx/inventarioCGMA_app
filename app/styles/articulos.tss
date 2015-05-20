@@ -20,19 +20,18 @@
 },
 
 
+
 '.viewSeparador': {
 	width: Titanium.UI.FILL,
-	height: '1%',
-	backgroundColor:'#FF0066'
-
-	
+	backgroundColor:'#F0F0F0',
+	height:'1.5%'
 },
 
 '.wrapContenidoBoton': {
 	width: Titanium.UI.FILL,
-	height: '30%',
+	height: '31%',
 	layout: 'horizontal',
-	backgroundColor: 'white',
+	backgroundColor: '#433F3D',
 },
 
 '.viewImgBoton': {
@@ -44,7 +43,8 @@
 '.viewTxtBoton': {
 	width: '75%',
 	height: '70dp',
-	layout: 'vertical'
+	layout: 'vertical',
+	backgroundColor:'#CC1A78'
 },
 
 '.viewTxtSeccion': {
@@ -56,29 +56,32 @@
 '.viewTxtInfo': {
 	width: Titanium.UI.FILL,
 	height: '45dp',
-	layout: 'horizontal'
-},
+	layout: 'horizontal',
+	},
 
 '.viewTxtBotonSub1': {
-	width: '60%',
+	width: Titanium.UI.SIZE,
 	height: Titanium.UI.FILL,
+	layout:'absolute'
+	
 },
 
 '.txtBotonTitulo': {
 	left: '10dp',
 	top: '3dp',
-	color: '#FF0066',
+	color: '#BCC4CA',
 	font: {
 		fontSize: '25dp'
 	}
 },
 
 '.txtBotonSub1': {
-	top: 0,
+	//top: '3dp',
+	bottom:'5dp',
 	left: '10dp',
-	color: '#FF0066',
+	color: '#BCC4CA',
 	font: {
-		fontSize: '15dp'
+		fontSize: '16dp'
 	},
 	width:'90%'
 },

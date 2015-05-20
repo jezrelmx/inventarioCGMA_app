@@ -59,9 +59,10 @@
 	},
 
 '.viewTxtBotonSub1': {
-	width: '60%',
+	width: Titanium.UI.SIZE,
 	height: Titanium.UI.FILL,
-	bottom:'3dp'
+	layout:'absolute'
+	
 },
 
 '.txtBotonTitulo': {
@@ -74,11 +75,12 @@
 },
 
 '.txtBotonSub1': {
-	//top: 0,
+	//top: '3dp',
+	bottom:'5dp',
 	left: '10dp',
 	color: '#BCC4CA',
 	font: {
-		fontSize: '15dp'
+		fontSize: '16dp'
 	},
 	width:'90%'
 },
