@@ -1,4 +1,77 @@
+'#winbajaArt[platform=android]': {
+	backgroundColor: '#121212',
+	barColor:'#CC1A78',
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	layout:'vertical'
+},
 
-".container" : {
-  
+"#winbajaArt[platform=ios formFactor=handheld]": {
+	backgroundColor: '#121212',
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	title: 'Inventario CGMA',
+	titleAttributes:  {
+		color: '#FFFFFF'
+	},
+	width:Titanium.UI.FILL,
+	height: Ti.UI.FILL,
+	barColor: '#0E2843',
+	translucent: true,
+	layout: 'vertical'
+},
+
+'#viewUp':{
+	// backgroundColor:"blue",
+	height:"45.5%",
+	width:Titanium.UI.FILL,
+	layout:"vertical"
+},
+
+'#viewDown':{
+	// backgroundColor:"navy",
+	height:"45.5%",
+	width:Titanium.UI.FILL,
+	layout:"vertical"
+},
+
+'.viewseparator':{
+	height:'3%',
+	width:Titanium.UI.FILL,
+	layout:'absolute',
+	backgroundColor:'#000000'
+}
+
+'#lbltitulo':{
+	color: '#BCC4CA',
+	font: {
+		fontSize: '25dp'
+	}
+}
+
+'#viewtxt':{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	layout:'absolute'
+}
+
+'#txtinventario':{
+	height:Titanium.UI.SIZE,
+	width:"80%",
+	color:"#121212",
+	font: {
+		fontSize: '20dp'
+	},
+	bottom:'10dp',
+	textAlign:'center'
+}
+
+'#btnbaja':{
+	height:Titanium.UI.SIZE,
+	width:'60%',
+	color: '#BCC4CA',
+	font: {
+		fontSize: '25dp'
+	},
+	borderRadius:'15dp',
+	top:'10%'
 }

@@ -26,25 +26,18 @@
 							<View  id="cajonTxtContrasenia" class="cajon">
 								<TextField  id="txtContrasenia" class="txtField" hintText="Contraseña" />
 							</View>
-							<View platform="android" class="cajon">
-								<Picker id="pickerDireccionEjecutiva" class="txtField">
-									<PickerColumn id="column1"></PickerColumn>
-								</Picker>
-							</View>
-							<View platform="android" class="cajon">
-								<Picker id="pickerTipoUsuario" class="txtField"></Picker>
-							</View>
+							<!-- <View platform="android" class="cajon"> -->
+							<!-- <Picker platform="android" id="pickerDireccionEjecutiva" selectionIndicator="true"></Picker> -->
+							<!-- </View> -->
+							<!-- <View platform="android" class="cajon">
+							<Picker id="pickerTipoUsuario" class="txtField"></Picker>
+							</View> -->
 							<View id="cajonDelegacionIOS" platform="ios" formFactor="handheld">
 								<Label id="txtPickerDelegacion">Delegación</Label>
 							</View>
-							<Picker id="picker" top="50" selectionIndicator="true">
-								<PickerColumn id="column1">
-									<PickerRow title="Bananas"/>
-									<PickerRow title="Strawberries"/>
-									<PickerRow title="Mangos"/>
-									<PickerRow title="Grapes"/>
-								</PickerColumn>
-							</Picker>
+							<View platform="android" class="cajon">
+								<Picker platform="android" id="pickerDireccionEjecutiva" selectionIndicator="true"></Picker>
+							</View>
 						</View>
 						<View id="viewPie">
 							<View id="btnAccion">
