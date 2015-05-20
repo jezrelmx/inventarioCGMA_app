@@ -77,8 +77,13 @@
 },
 
 '#pickerDireccionEjecutiva[platform=android]': {
-	backgroundColor: '#FFFFFF',
 	width: Titanium.UI.FILL,
+	color: '#121212'
+},
+
+'#pickerTipoUsuario[platform=android]': {
+	width: Titanium.UI.FILL,
+	color: '#121212'
 },
 
 /**
@@ -99,19 +104,19 @@
 	opacity: 0.2
 },
 
-"#cancel": {
-	top: 5,
-	left: 5,
-	width: Ti.UI.SIZE,
-	height: 35
-},
-"#done": {
-	top: 5,
-	right: 5,
-	width: Ti.UI.SIZE,
-	height: 35,
-	systemButton: Ti.UI.iPhone.SystemButton.DONE
-},
+// "#cancel": {
+	// top: 5,
+	// left: 5,
+	// width: Ti.UI.SIZE,
+	// height: 35
+// },
+// "#done": {
+	// top: 5,
+	// right: 5,
+	// width: Ti.UI.SIZE,
+	// height: 35,
+	// systemButton: Ti.UI.iPhone.SystemButton.DONE
+// },
 
 /**
 * 	------------- TERMINA PICKER DE IOS -----------------
@@ -121,6 +126,7 @@
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.SIZE,
 	right: 0,
+	bottom: '10dp',
 	layout: "absolute"
 },
 

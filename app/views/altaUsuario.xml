@@ -1,5 +1,6 @@
 <Alloy>
 	<Window id="winAltaUsuario">
+		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Alta usuario" onHomeIconItemSelected="volver" />
 		<ScrollView id="scrollUnico">
 			<View class="scrollItem">
 				<View id="wrapContenedor">
@@ -26,22 +27,19 @@
 							<View  id="cajonTxtContrasenia" class="cajon">
 								<TextField  id="txtContrasenia" class="txtField" hintText="Contraseña" />
 							</View>
-							<!-- <View platform="android" class="cajon"> -->
-							<!-- <Picker platform="android" id="pickerDireccionEjecutiva" selectionIndicator="true"></Picker> -->
-							<!-- </View> -->
-							<!-- <View platform="android" class="cajon">
-							<Picker id="pickerTipoUsuario" class="txtField"></Picker>
-							</View> -->
-							<View id="cajonDelegacionIOS" platform="ios" formFactor="handheld">
-								<Label id="txtPickerDelegacion">Delegación</Label>
+							<View platform="android" class="cajon">
+								<Picker platform="android" class="txtField" id="pickerDireccionEjecutiva" selectionIndicator="true"></Picker>
 							</View>
 							<View platform="android" class="cajon">
-								<Picker platform="android" id="pickerDireccionEjecutiva" selectionIndicator="true"></Picker>
+								<Picker platform="android" class="txtField" id="pickerTipoUsuario" selectionIndicator="true"></Picker>
+							</View>
+							<View id="cajonDelegacionIOS" platform="ios" formFactor="handheld">
+								<Label id="txtPickerDelegacion">Delegación</Label>
 							</View>
 						</View>
 						<View id="viewPie">
 							<View id="btnAccion">
-								<Label id="lbAccion">Enviar</Label>
+								<Label id="lbAccion">Guardar</Label>
 							</View>
 						</View>
 					</View>

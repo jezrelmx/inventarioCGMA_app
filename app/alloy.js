@@ -10,4 +10,12 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
-var url_base = "http://192.168.3.108";
+/**
+ * ----- PALETA DE COLORES -----
+ * #CC1A78  -- ROSA
+ * #F0F0F0  -- GRIS
+ * #121212  -- NEGRO
+ * #FFFFFF  -- BLANCO
+ */
+
+var url_base = "http://192.168.3.109";
