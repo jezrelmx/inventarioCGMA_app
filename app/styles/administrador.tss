@@ -1,12 +1,13 @@
 '#winadmin[platform=android]': {
-	backgroundColor: '#121212',
+	backgroundColor: '#ffffff',
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.FILL,
-	layout:'vertical'
+	layout:'vertical',
+	barColor:'#CC1A78'
 },
 
 "#winadmin[platform=ios formFactor=handheld]": {
-	backgroundColor: '#121212',
+	backgroundColor: '#ffffff',
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
 	title: 'Inventario CGMA',
 	titleAttributes:  {
@@ -14,20 +15,20 @@
 	},
 	width:Titanium.UI.FILL,
 	height: Ti.UI.FILL,
-	barColor: '#0E2843',
+	barColor: '#CC1A78',
 	translucent: true,
 	layout: 'vertical'
 },
 
 '#vistainfo':{
-	backgroundColor:'#121212',
+	backgroundColor:'#ffffff',
 	width:Titanium.UI.FILL,
 	height:"30%",
 	layout:'vertical'
 },
 
 '.lbltexto':{
-	color:'white',
+	color:'#CC1A78',
 	font:{
 		fontSize:'25dp'
 	}
@@ -37,7 +38,8 @@
 	width: Titanium.UI.FILL,
 	height: '30%',
 	layout: 'horizontal',
-	backgroundColor: '#433F3D',
+	backgroundColor: '#CC1A78',    
+	opacity:'0.95'  
 },
 
 '.viewImgBoton': {
@@ -47,24 +49,25 @@
 },
 
 '.viewSeparador': {
-	backgroundColor:"black",
+	backgroundColor:'#F0F0F0', //gris
 	width: Titanium.UI.FILL,
-	height: '2.5%'
+	height: '1.5%'
+	
 },
 
 '.viewTxtSeccion': {
 	width: Titanium.UI.FILL,
 	height: '35dp',
 	layout: 'absolute',
-	top: '35%'
+	top: '35%',
 },
 
 '.txtBotonTitulo': {
 	left: '10dp',
 	top: '3dp',
-	color: '#BCC4CA',
+	color: '#ffffff',
 	font: {
-		fontSize: '25dp'
+		fontSize: '30dp'
 	}
 },
 
@@ -75,3 +78,10 @@
 '#imgArticulo':{
 	image:"/images/articulos.png"
 },
+
+
+
+
+
+
+

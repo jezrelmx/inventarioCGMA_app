@@ -22,7 +22,8 @@
 
 '.viewSeparador': {
 	width: Titanium.UI.FILL,
-	height: '2.5%'
+	backgroundColor:'#F0F0F0',
+	height:'1.5%'
 },
 
 '.wrapContenidoBoton': {
@@ -41,7 +42,8 @@
 '.viewTxtBoton': {
 	width: '75%',
 	height: '70dp',
-	layout: 'vertical'
+	layout: 'vertical',
+	backgroundColor:'#CC1A78'
 },
 
 '.viewTxtSeccion': {
@@ -53,12 +55,13 @@
 '.viewTxtInfo': {
 	width: Titanium.UI.FILL,
 	height: '45dp',
-	layout: 'horizontal'
-},
+	layout: 'horizontal',
+	},
 
 '.viewTxtBotonSub1': {
 	width: '60%',
-	height: Titanium.UI.FILL
+	height: Titanium.UI.FILL,
+	bottom:'3dp'
 },
 
 '.txtBotonTitulo': {
@@ -71,7 +74,7 @@
 },
 
 '.txtBotonSub1': {
-	top: 0,
+	//top: 0,
 	left: '10dp',
 	color: '#BCC4CA',
 	font: {

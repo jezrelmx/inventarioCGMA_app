@@ -4,9 +4,7 @@
 		<View class="viewSeparador"/>
 		<View id="vistainfo">
 			<Label id="nombre" class="lbltexto">Nombre</Label>
-			<View class="viewSeparador"/>
 			<Label id="cargo" class="lbltexto">Cargo</Label>
-			<View class="viewSeparador"/>
 			<Label id="empleado" class="lbltexto">Empleado</Label>
 		</View>
 		<View class="viewSeparador"/>
@@ -27,6 +25,6 @@
 				<Label class="txtBotonTitulo">Articulos</Label>
 			</View>
 		</View>
-		<View class="viewSeparador"/>
+		<!-- <View class="viewSeparador"/> -->
 	</Window>
 </Alloy>
