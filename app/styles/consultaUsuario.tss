@@ -77,35 +77,30 @@
 }
 
 /**
- * 	
+ * +++++++++++++++++++ LISTA DE USUARIOS +++++++++++++++++++	
  */
 
-'#viewHeader': {
-	backgroundColor: "#F2F2F2",
-	height: Ti.UI.SIZE
-},
-
-"#viewInfoCuadrante": {
+"#viewInfoUsuario": {
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.FILL,
 	layout: "horizontal"
 },
 
-"#lbCuadrante": {
+"#lbNumEmpleado": {
 	left: '15dp',
 	color: "#121212",
 	font: {
-		fontSize: 34
+		fontSize: 20
 	}
 },
 
-'#viewDetalles': {
-	width: Titanium.UI.FILL,
+'.viewDetalles': {
+	width: '50%',
 	height: Titanium.UI.FILL,
 	layout: 'vertical'
 },
 
-"#lbSector": {
+"#lbNombre": {
 	right: '10dp',
 	top: 4,
 	color: "#374260",
@@ -115,7 +110,20 @@
 	}
 },
 
-"#lbDelegacion": {
+"#lbApPaterno": {
 	right: '10dp',
 	color: "#00417A"
+},
+
+"#lbApMaterno": {
+	right: '10dp',
+	color: "#00417A"
+},
+
+"#lbCargo": {
+	right: '10dp',
+	color: "#00417A",
+	font: {
+		fontWeight: 'bold'
+	}
 }

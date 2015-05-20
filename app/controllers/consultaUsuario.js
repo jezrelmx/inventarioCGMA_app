@@ -25,29 +25,30 @@ var client = Ti.Network.createHTTPClient({
     onload : function(e) {
         var respuesta = this.responseText;
         var objRespuesta = JSON.parse(respuesta);
-
+        var items = [];
         if (objRespuesta.code == 200) {
             var listaUsuarios = objRespuesta.data;
             for (var key in listaUsuarios) {
                 console.log(' --- ' + JSON.stringify(listaUsuarios[key]));
-
-            };
-
-            var items = [];
-            var cuadrantes = listaUsuarios;
-            for (var i = 0; i < cuadrantes.length; i++) {
                 items.push({
-                    lbSector : {
-                        text : cuadrantes[i].properties.nombre
+                    lbNombre : {
+                        text : listaUsuarios[key].nombre
                     },
-                    lbDelegacion : {
-                        text : cuadrantes[i].properties.ap_paterno
+                    lbApPaterno : {
+                        text : listaUsuarios[key].ap_paterno
                     },
-                    lbCuadrante : {
-                        text : cuadrantes[i].properties.ap_materno
+                    lbApMaterno : {
+                        text : listaUsuarios[key].ap_materno
+                    },
+                    lbCargo : {
+                        text : listaUsuarios[key].cargo
+                    },
+                    lbNumEmpleado : {
+                        text : listaUsuarios[key].num_empleado
                     }
                 });
             };
+        
             $.elementsList.sections[0].setItems(items);
 
             // $.elementsList.addEventListener('itemclick', function(e) {
@@ -63,16 +64,6 @@ var client = Ti.Network.createHTTPClient({
             if (OS_IOS) {
                 Alloy.Globals.winInventarioCGMA.openWindow($.winConsultaUsuario);
             };
-
-            // for (var key in objRespuesta.data.cat_tipo_usuario) {
-            // var attrName = key;
-            // var attrValue = objRespuesta.data.cat_tipo_usuario[key];
-            // var row = Ti.UI.createPickerRow({
-            // id : attrName,
-            // title : attrValue.descripcion
-            // });
-            // rowsTipoUsuario.push(row);
-            // }
 
             // Alloy.createController('administrador', objUsuario);
         } else {

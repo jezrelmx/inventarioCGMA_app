@@ -7,26 +7,25 @@
 					<View class="contenedor">
 						<View id="viewLista">
 							<Label>Usuarios registrados</Label>
-							
-							
-							
 							<ListView id="elementsList" defaultItemTemplate="elementTemplate">
 								<Templates>
 									<ItemTemplate name="elementTemplate">
-										<View id="viewInfoCuadrante">
-											<Label bindId="lbCuadrante" id="lbCuadrante" />
-											<View id="viewDetalles">
-												<Label bindId="lbSector" id="lbSector" />
-												<Label bindId="lbDelegacion" id="lbDelegacion" />
+										<View id="viewInfoUsuario">
+											<View class="viewDetalles">
+												<Label bindId="lbNumEmpleado" id="lbNumEmpleado" />
+												<Label bindId="lbNumEmpleado" id="lbNumEmpleado" />
+												<Label bindId="lbNumEmpleado" id="lbNumEmpleado" />	
+											</View>
+											
+											<View class="viewDetalles">
+												<Label bindId="lbNombre" id="lbNombre" />
+												<Label bindId="lbApPaterno" id="lbApPaterno" />
+												<Label bindId="lbApMaterno" id="lbApMaterno" />
+												<Label bindId="lbCargo" id="lbCargo" />
 											</View>
 										</View>
 									</ItemTemplate>
 								</Templates>
-								<HeaderView>
-									<View id="viewHeader">
-										<Label>Seleccione un cuadrante</Label>
-									</View>>
-								</HeaderView>
 								<ListSection></ListSection>
 							</ListView>
 
