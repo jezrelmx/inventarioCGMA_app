@@ -1,11 +1,11 @@
-'#winAltaUsuario[platform=android]': {
+'#winAltaArticulo[platform=android]': {
 	backgroundColor: '#FFFFFF',
 	height:Titanium.UI.FILL,
 	width:Titanium.UI.FILL,
 	layout:"absolute"	
 },
 
-"#winAltaUsuario[platform=ios formFactor=handheld]": {
+"#winAltaArticulo[platform=ios formFactor=handheld]": {
 	backgroundColor: '#FFFFFF',
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
 	title: 'Inventario CGMA',
@@ -75,42 +75,6 @@
 	maxLength: 50,
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
 },
-
-/**
-* 	------------- PICKER DE IOS -----------------
-*/
-'#cajonDelegacionIOS[platform=ios formFactor=handheld]': {
-	backgroundColor: '#FFFFFF',
-	width: Titanium.UI.FILL,
-	height: "48dp",
-	top: "4dp",
-	bottom: "4dp",
-	layout: 'absolute'
-},
-
-'#txtPickerDelegacion[platform=ios formFactor=handheld]': {
-	color: '#121212',
-	left: 0,
-	opacity: 0.2
-},
-
-"#cancel": {
-	top: 5,
-	left: 5,
-	width: Ti.UI.SIZE,
-	height: 35
-},
-"#done": {
-	top: 5,
-	right: 5,
-	width: Ti.UI.SIZE,
-	height: 35,
-	systemButton: Ti.UI.iPhone.SystemButton.DONE
-},
-
-/**
-* 	------------- TERMINA PICKER DE IOS -----------------
-*/
 
 '#viewPie':{
 	width: Titanium.UI.FILL,
