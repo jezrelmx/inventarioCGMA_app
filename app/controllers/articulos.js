@@ -14,7 +14,8 @@ function abrirBajaUsuario(){
 };
 
 function abrirConsultaUsuario(){
-	alert("Ventana consulta de usuarios");
+	// alert("Ventana consulta de usuarios");
+	Alloy.createController('consultaArticulo');
 };
 
 if (OS_ANDROID) {

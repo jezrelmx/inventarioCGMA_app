@@ -1,4 +1,164 @@
+'#winConsultaArticulo[platform=android]': {
+	backgroundColor: '#FFFFFF',
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	layout:"absolute"	
+},
 
-".container" : {
-  
+"#winConsultaArticulo[platform=ios formFactor=handheld]": {
+	backgroundColor: '#FFFFFF',
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	title: 'Inventario CGMA',
+	titleAttributes:  {
+		color: '#FFFFFF'
+	},
+	width:Titanium.UI.FILL,
+	height: Ti.UI.FILL,
+	barColor: '#0E2843',
+	translucent: true,
+	layout: 'absolute'
+},
+
+'#scrollUnico': {
+	width: Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	layout: 'horizontal',
+	scrollType: 'vertical'
+},
+
+'.scrollItem': {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+},
+
+'.contenedor': {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
+	layout: 'vertical'
+},
+
+'#wrapContenedor': {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	layout: 'absolute'
+},
+
+/**
+* 	---------------------------- FORMULARIO ----------------------------
+*/
+'#viewLista':{
+	backgroundColor: '#F0F0F0',
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	zIndex: 2
+},
+
+'.cajon': {
+	width: Titanium.UI.FILL,
+	height: "48dp",
+	top: "4dp",
+	bottom: "4dp",
+	layout: 'horizontal'
+},
+
+'.txtField': {
+	color: "#121212",
+	backgroundColor: "#FFFFFF",
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	maxLength: 50,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+
+/**
+ * +++++++++++++++++++ LISTA DE USUARIOS +++++++++++++++++++	
+ */
+
+"#viewInfoUsuario": {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	layout: "horizontal"
+},
+
+'.viewDetalles': {
+	width: '50%',
+	height: Titanium.UI.FILL,
+	layout: 'vertical'
+},
+
+"#lbNumEmpleado": {
+	left: '15dp',
+	color: "#121212",
+	font: {
+		fontSize: 20,
+		fontWeight: 'bold'
+	}
+},
+
+"#lbDireccionEjecutiva": {
+	left: '15dp',
+	color: "#121212",
+	font: {
+		fontSize: 15
+	}
+},
+
+"#lbEmail": {
+	left: '15dp',
+	color: "#121212",
+	font: {
+		fontSize: 15
+	}
+},
+
+"#lbTipoUsuario": {
+	right: '10dp',
+	color: "#121212",
+	font: {
+		fontSize: 15,
+		fontWeight: 'bold'
+	}
+},
+
+"#lbEstado": {
+	right: '10dp',
+	color: "#121212",
+	font: {
+		fontSize: 15,
+		fontWeight: 'bold'
+	}
+},
+
+"#lbNombre": {
+	right: '10dp',
+	top: 4,
+	color: "#374260",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	font: {
+		fontSize: 15
+	}
+},
+
+"#lbApPaterno": {
+	right: '10dp',
+	color: "#00417A"
+},
+
+"#lbApMaterno": {
+	right: '10dp',
+	color: "#00417A"
+},
+
+"#lbCargo": {
+	left: '15dp',
+	color: "#00417A",
+	font: {
+		fontWeight: 'bold'
+	}
 }

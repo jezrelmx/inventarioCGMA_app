@@ -1,4 +1,75 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window id="winConsultaArticulo">
+		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Consulta de usuarios" onHomeIconItemSelected="volver" />
+		<ScrollView id="scrollUnico">
+			<View class="scrollItem">
+				<View id="wrapContenedor">
+					<View class="contenedor">
+						<View id="viewLista">
+							<Label>Articulos registrados</Label>
+							<ListView id="elementsList" defaultItemTemplate="elementTemplate">
+								<Templates>
+									<ItemTemplate name="elementTemplate">
+										<View id="viewInfoUsuario">
+											<View class="viewDetalles">
+												<Label bindId="lbNum_Inventario" id="lbNumEmpleado" />
+												<Label bindId="lbResponsable" id="lbDireccionEjecutiva" />
+												<Label bindId="lbNum_empleado" id="lbEmail" />
+													
+											</View>
+											<View class="viewDetalles">
+												<Label bindId="lbTipo" id="lbNombre" />
+												<Label bindId="lbCaracteristica" id="lbApPaterno" />
+												<Label bindId="lbEstatus" id="lbApMaterno" />
+												
+											</View>
+										</View>
+									</ItemTemplate>
+								</Templates>
+								<ListSection></ListSection>
+							</ListView>
+
+
+
+							<!-- <View  id="cajonTxtNombre" class="cajon">
+							<TextField  id="txtNombre" class="txtField" hintText="Nombre" />
+							</View>
+							<View  id="cajonTxtApPaterno" class="cajon">
+							<TextField  id="txtApPaterno" class="txtField" hintText="Apellido paterno" />
+							</View>
+							<View  id="cajonTxtApMaterno" class="cajon">
+							<TextField  id="txtApMaterno" class="txtField" hintText="Apellido materno" />
+							</View>
+							<View  id="cajonTxtCargo" class="cajon">
+							<TextField  id="txtCargo" class="txtField" hintText="Cargo" />
+							</View>
+							<View  id="cajonTxtNumEmpleado" class="cajon">
+							<TextField  id="txtNumEmpleado" class="txtField" hintText="Número de empleado" />
+							</View>
+							<View  id="cajonTxtCorreoElectronico" class="cajon">
+							<TextField  id="txtCorreoElectronico" class="txtField" hintText="Correo electrónico" />
+							</View>
+							<View  id="cajonTxtContrasenia" class="cajon">
+							<TextField  id="txtContrasenia" class="txtField" hintText="Contraseña" />
+							</View>
+							<View platform="android" class="cajon">
+							<Picker platform="android" class="txtField" id="pickerDireccionEjecutiva" selectionIndicator="true"></Picker>
+							</View>
+							<View platform="android" class="cajon">
+							<Picker platform="android" class="txtField" id="pickerTipoUsuario" selectionIndicator="true"></Picker>
+							</View>
+							<View id="cajonDelegacionIOS" platform="ios" formFactor="handheld">
+							<Label id="txtPickerDelegacion">Delegación</Label>
+							</View> -->
+						</View>
+						<!-- <View id="viewPie">
+						<View id="btnAccion">
+						<Label id="lbAccion">Guardar</Label>
+						</View>
+						</View> -->
+					</View>
+				</View>
+			</View>
+		</ScrollView>
+	</Window>
 </Alloy>
