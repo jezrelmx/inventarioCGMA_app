@@ -1,36 +1,47 @@
 <Alloy>
-	<Window id="container">
+	<Window id="winResguardos">
 		<View id="viewTop">
 			<View class="datosUser">
-				<Label class="infoUser">Nombre:</Label>
+				<Label class="infoUser" id="nombre">Nombre:</Label>
 			</View>
 			<View class="datosUser">
-				<Label class="infoUser">Cargo:</Label>
+				<Label class="infoUser" id="cargo">Cargo:</Label>
 			</View>
 			<View class="datosUser">
-				<Label class="infoUser">Numero Empleado:</Label>
+				<Label class="infoUser" id="no_empleado">Numero Empleado:</Label>
 			</View>
 		</View>
 		<!-- Seccion de tabla -->
-		<View id="viewBottom">	
-			 <ListView id="list" defaultItemTemplate="template">
-	        	 <Templates>
-
-                <ItemTemplate name="template">
-                    <Label bindId="id" id="id" />
-                    <Label bindId="descripcion" id="descripcion" />
-                    <Label bindId="inventario" id="inventario" />
-                    <Label bindId="caracteristica" id="caracteristica" />
-                </ItemTemplate>
-
-            </Templates>
-             <ListSection id="listSection">
-             	 <ListItem class="listItem" id:text="1" descripcion:text="Inventario:" inventario:text="Descripcion:" caracteristica:text="Caracteristica:"/>
-             </ListSection>
-             
-    		</ListView>
-
-		</View>
+		<ScrollView id="scrollUnico">
+			<View class="scrollItem">
+				<View id="wrapContenedor">
+					<View class="contenedor">
+						<View id="viewLista">
+							<Label>Reguardo</Label>
+							<ListView id="elementsList" defaultItemTemplate="elementTemplate">
+								<Templates>
+									<ItemTemplate name="elementTemplate">
+										<View id="viewInfoUsuario">
+											<View class="viewDetalles" id="viewInventario">
+												<Label bindId="lbNum_Inventario" id="lbNumEmpleado" />
+													
+											</View>
+											<View class="viewDetalles">
+												<Label bindId="lbTipo" id="lbNombre" />
+												<Label bindId="lbCaracteristica" id="lbApPaterno" />
+												<Label bindId="lbEstatus" id="lbApMaterno" />
+												
+											</View>
+										</View>
+									</ItemTemplate>
+								</Templates>
+								<ListSection></ListSection>
+							</ListView>
+						</View>
+					</View>
+				</View>
+			</View>
+		</ScrollView>
 	</Window>
 </Alloy>
 

@@ -1,97 +1,151 @@
-'#container':{
-	backgroundColor:'black',
+'#winResguardos[platform=android]': {
+	backgroundColor: '#ffffff',
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.FILL,
-	layout:'vertical'
+	layout:'vertical',
+	barColor:'#CC1A78'
+},
+
+"#winRResguardos[platform=ios formFactor=handheld]": {
+	backgroundColor: '#ffffff',
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	title: 'Inventario CGMA',
+	titleAttributes:  {
+		color: '#FFFFFF'
+	},
+	width:Titanium.UI.FILL,
+	height: Ti.UI.FILL,
+	barColor: '#CC1A78',
+	translucent: true,
+	layout: 'vertical'
 },
 
 '#viewTop':{
-	//backgroundColor:'red',
+	backgroundColor:'#FFFFFF',
 	width:Titanium.UI.FILL,
 	height:'30%',
 	layout:'vertical'
-},
-'#viewBottom':{
-	//backgroundColor:'navy',
-	width:Titanium.UI.FILL,
-	height:'70%',
-	layout:'vertical'
-},
-
-'#list':{
-	//backgroundColor:'silver',
-	layout:'horizontal'	
 },
 
 '.datosUser':{
-	//backgroundColor:'green',
 	width:Titanium.UI.FILL,
-	height:'30%',
+	height:Titanium.UI.SIZE,
 	layout:'absolute'
 },
 
-
 '.infoUser':{
-	left:'10dp',
-	
+	color:'#CC1A78',
+	font:{
+		fontSize:'25dp'
+	}
+},
+
+'#scrollUnico': {
+	width: Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	layout: 'horizontal',
+	scrollType: 'vertical'
+},
+
+'.scrollItem': {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+},
+
+'.contenedor': {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
+	layout: 'vertical'
+},
+
+'#wrapContenedor': {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	layout: 'absolute'
 },
 
 
-'#listSection':{
-	backgroundColor:'blue'
-	
+/**
+* 	---------------------------- FORMULARIO ----------------------------
+*/
+
+'#viewLista':{
+	backgroundColor: '#F0F0F0',
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	zIndex: 2
 },
 
-'.listItem':{
-		backgroundColor:'blue',
-		color:'white'
+'.cajon': {
+	width: Titanium.UI.FILL,
+	height: "48dp",
+	top: "4dp",
+	bottom: "4dp",
+	layout: 'horizontal'
 },
 
-"#numero":{
-	//width: '50dp', height: '50dp', left: 0
-	color: 'white',
-    font: { fontFamily:'Arial', fontSize: '20dp', fontWeight:'bold' },
-    left: '5dp', top: 0
+'.txtField': {
+	color: "#121212",
+	backgroundColor: "#FFFFFF",
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	maxLength: 50,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+
+/**
+ * +++++++++++++++++++ LISTA DE USUARIOS +++++++++++++++++++	
+ */
+
+"#viewInfoUsuario": {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	layout: "horizontal"
 },
 
-"#descripcion" : {
-    color: 'white',
-    font: { fontFamily:'Arial', fontSize: '20dp', fontWeight:'bold' },
-    left: '40dp', top: 0
-},
-"#inventario" : {
-    color: 'white',
-    font: { fontFamily:'Arial', fontSize: '14dp' },
-    left: '40dp', top: '25dp'
+'.viewDetalles': {
+	width: '50%',
+	height: Titanium.UI.FILL,
+	layout: 'vertical'
 },
 
-
-
-'#caracteristica':{
-	 color: 'white',
-    font: { fontFamily:'Arial', fontSize: '14dp' },
-    left: '150dp', top: '25dp'
-
+"#viewInventario":{
+	width: '50%',
+	height: Titanium.UI.FILL,
+	layout: 'absolute'
 },
 
+"#lbNumEmpleado": {
+	left: '15dp',
+	color: "#121212",
+	font: {
+		fontSize: 20,
+		fontWeight: 'bold'
+	}
+},
 
+"#lbNombre": {
+	right: '10dp',
+	top: 4,
+	color: "#374260",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	font: {
+		fontSize: 15
+	}
+},
 
+"#lbApPaterno": {
+	right: '10dp',
+	color: "#00417A"
+},
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"#lbApMaterno": {
+	right: '10dp',
+	color: "#00417A"
+},
