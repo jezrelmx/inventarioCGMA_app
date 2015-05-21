@@ -3,7 +3,8 @@
 	barColor:'#CC1A78',
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.FILL,
-	layout:'vertical'
+	layout:'vertical',
+	opacity:'85%'
 },
 
 "#winbajaArt[platform=ios formFactor=handheld]": {
@@ -21,14 +22,14 @@
 },
 
 '#viewUp':{
-	backgroundColor:'#CC1A78',
+	backgroundColor:'#ffffff',
 	height:"45.5%",
 	width:Titanium.UI.FILL,
 	layout:"vertical"
 },
 
 '#viewDown':{
-	backgroundColor:'#CC1A78',
+	backgroundColor:'#ffffff',
 	height:"45.5%",
 	width:Titanium.UI.FILL,
 	layout:"vertical"
@@ -51,13 +52,14 @@
 '#viewtxt':{
 	height:Titanium.UI.FILL,
 	width:Titanium.UI.FILL,
-	layout:'absolute'
+	layout:'vertical',
+	top:'70dp'
 }
 
 '#txtinventario':{
 	height:Titanium.UI.SIZE,
-	width:"80%",
-	color:"#ffffff",
+	width:'70%',
+	color:"#121212",
 	font: {
 		fontSize: '20dp'
 	},
@@ -67,13 +69,20 @@
 }
 
 '#btnbaja':{
-	backgroundColor:'#d3d4d4',
+	backgroundColor:'#CC1A78',
 	height:Titanium.UI.SIZE,
-	width:'60%',
+	width:Titanium.UI.SIZE,
 	color: '#FFFFFF',
 	font: {
-		fontSize: '25dp'
+		fontSize: '20dp'
 	},
-	borderRadius:'15dp',
+	borderRadius:'10dp',
 	top:'10%'
 }
+
+
+
+
+
+
+
