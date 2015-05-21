@@ -1,6 +1,9 @@
 <Alloy>
 	<Window id="winadmin">
 		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Administrador" onHomeIconItemSelected="volver" />
+		<Menu>
+			<MenuItem id="menuResguardos" title="Resguardos" onClick="consultarResguardos"/>
+		</Menu>
 		<View class="viewSeparador"/>
 		<View id="vistainfo">
 			<Label id="nombre" class="lbltexto">Nombre</Label>
@@ -17,8 +20,7 @@
 					<Label class="txtBotonTitulo">Usuarios</Label>
 				</View>
 				<View class="viewTxtInfo">
-					<View class="viewTxtBotonSub1">
-					</View>
+					<View class="viewTxtBotonSub1"></View>
 				</View>
 			</View>
 		</View>

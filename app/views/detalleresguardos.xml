@@ -1,0 +1,38 @@
+<Alloy>
+	<Window id="winConsultaResguardos">
+		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Consulta de resguardos" onHomeIconItemSelected="volver" />
+		<ScrollView id="scrollUnico">
+			<View class="scrollItem">
+				<View id="wrapContenedor">
+					<View class="contenedor">
+						<View id="viewLista">
+							<Label>Resguardos por usuario</Label>
+							<ListView id="elementsList" defaultItemTemplate="elementTemplate">
+								<Templates>
+									<ItemTemplate name="elementTemplate">
+										<View id="viewContenedorResguardo">
+											<View id="viewDueno">
+												<Label bindId="lbPropietario" id="lbPropietario" />
+											</View>
+											<View id="viewInfoUsuario">
+												<View class="viewDetalles">
+													<Label bindId="lbNum_Inventario" id="lbNumEmpleado" />
+													<Label bindId="lbResponsable" id="lbDireccionEjecutiva" />
+												</View>
+												<View class="viewDetalles">
+													<Label bindId="lbTipo" id="lbNombre" />
+													<Label bindId="lbCaracteristica" id="lbApPaterno" />
+												</View>
+											</View>
+										</View>
+									</ItemTemplate>
+								</Templates>
+								<ListSection></ListSection>
+							</ListView>
+						</View>
+					</View>
+				</View>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>
