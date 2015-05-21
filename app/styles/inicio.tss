@@ -1,5 +1,5 @@
 '#win1[platform=ios formFactor=handheld]': {
-	backgroundColor: '#FFFFFF',
+	backgroundColor: '#F0F0F0',
 	tintColor: '#C2BEBF'
 },
 
@@ -17,7 +17,7 @@
 
 '#winInventarioCGMA[platform=android]': {
 	height: Ti.UI.FILL,
-	backgroundColor: '#FFFFFF',
+	backgroundColor: '#F0F0F0',
 	layout: 'absolute'
 },
 
@@ -51,15 +51,32 @@
 	layout: 'vertical'
 },
 
-"#txtCorreo": {
-	width: '50%',
-	hintText: 'Correo institucional'
+'.cajon': {
+	width: Titanium.UI.FILL,
+	height: "48dp",
+	top: "4dp",
+	bottom: "4dp",
+	layout: 'horizontal'
 },
 
-"#txtContrania": {
-	width: '50%',
-	hintText: 'Solo administrador'
+'.txtField': {
+	color: "#121212",
+	backgroundColor: "#FFFFFF",
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	maxLength: 50,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
 },
+
+// "#txtCorreo": {
+	// width: '50%',
+	// hintText: 'Correo institucional'
+// },
+
+// "#txtContrania": {
+	// width: '50%',
+	// hintText: 'Solo administrador'
+// },
 
 "#viewContenedorBotones": {
 	// backgroundColor: 'navy',
@@ -73,6 +90,16 @@
 	width: '50%',
 	height: Titanium.UI.FILL,
 	layout: 'absolute'
+},
+
+'.btnAccion': {
+	height: "48dp",
+	width: '120dp',
+	backgroundColor: '#CC1A78'
+},
+
+'.lbAccion': {
+	color: "#FFFFFF"
 }
 
 

@@ -30,31 +30,16 @@ if (OS_IOS) {
 $.btnAccion.addEventListener('click', function(e) {
     var url = url_base + "/inventarioCGMA/consultar_usuario_c/usuario_email";
     var correo = $.txtCorreo.getValue();
-    alert(correo);
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
             var respuesta = this.responseText;
-            alert(respuesta);
-            // var objRespuesta = JSON.parse(respuesta);
-            // if (objRespuesta.code == 200) {
-            // var listaUsuarios = objRespuesta.data;
-            //
-            //
-            // $.elementsList.sections[0].setItems(items);
-            //
-            //
-            //
-            // if (OS_ANDROID) {
-            // $.winEliminarUsuario.open();
-            // };
-            // if (OS_IOS) {
-            // Alloy.Globals.winInventarioCGMA.openWindow($.winEliminarUsuario);
-            // };
-            //
-            // Alloy.createController('administrador', objUsuario);
-            // } else {
-            // alert('Intente de nuevo' + this.responseText);
-            // };
+            var objRespuesta = JSON.parse(respuesta);
+            if (objRespuesta.code == 200) {
+                var datosUsuario = objRespuesta.data;
+                Alloy.createController('confirmarEliminarUsuario', JSON.stringify(datosUsuario));               
+            } else {
+                alert('Intente de nuevo. ' + objRespuesta.message);
+            };
         },
         onerror : function(e) {
             Ti.API.debug(e.error);
@@ -67,4 +52,4 @@ $.btnAccion.addEventListener('click', function(e) {
     client.send({
         email : correo
     });
-}); 
+});

@@ -10,9 +10,9 @@ if (OS_ANDROID) {
         $.destroy();
     };
     $.winInventarioCGMA.addEventListener('postlayout', function(e) {
-        abx.setBackgroundColor('#0E2843');
-        abx.titleColor = "#FFFFFF";
-        abx.subtitleColor = "#FFFFFF";
+        // abx.setBackgroundColor('#0E2843');
+        abx.titleColor = "#121212";
+        abx.subtitleColor = "#121212";
     });
 };
 
@@ -33,18 +33,14 @@ $.btnServidorPublico.addEventListener('click', function() {
 });
 
 $.btnAdmin.addEventListener('click', function() {
-    console.log($.txtCorreo.getValue());
     var objCredenciales = {
         txtCorreo : $.txtCorreo.value,
         txtContrasenia : $.txtContrania.value
     };
-    console.log('usuario ' + objCredenciales.txtCorreo + ' constrasenia ' + objCredenciales.txtContrasenia);
-
     var url = url_base + "/inventarioCGMA/Index_c/inicia_sesion";
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
             var respuesta = JSON.parse(this.responseText);
-            console.log('DOC >>>>>>>>>>>>> ' + respuesta);
             if (respuesta.code == 200) {
                 var objUsuario = JSON.parse(respuesta.data);
                 Alloy.createController('administrador', objUsuario);

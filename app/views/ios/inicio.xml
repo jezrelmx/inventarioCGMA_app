@@ -12,20 +12,26 @@
 				</View>
 				<View id="viewFormulario">
 					<View class="viewFormularioCampo">
-						<Label id="lbCorreo">Correo electrónico</Label>
-						<TextField id="txtCorreo"></TextField>
+						<View class="cajon">
+							<TextField  id="txtCorreo" class="txtField" hintText="Correo electrónico institucional" />
+						</View>
 					</View>
 					<View class="viewFormularioCampo">
-						<Label id="lbCorreo">Contraseña</Label>
-						<TextField id="txtContrania"></TextField>
+						<View class="cajon">
+							<TextField  id="txtContrania" class="txtField" hintText="Contraseña (solo administrador)" />
+						</View>
 					</View>
 				</View>
 				<View id="viewContenedorBotones">
 					<View class="viewContenedorBoton">
-						<Button id="btnServidorPublico">Servidor Público</Button>
+						<View class="btnAccion" id="btnServidorPublico">
+							<Label class="lbAccion">Servidor Público</Label>
+						</View>
 					</View>
 					<View class="viewContenedorBoton">
-						<Button id="btnAdmin">Administrador</Button>
+						<View class="btnAccion" id="btnAdmin">
+							<Label class="lbAccion">Administrador</Label>
+						</View>
 					</View>
 				</View>
 			</View>
