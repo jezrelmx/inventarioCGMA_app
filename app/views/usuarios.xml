@@ -8,7 +8,7 @@
 			</View>
 			<View class="viewTxtBoton">
 				<View class="viewTxtSeccion">
-					<Label class="txtBotonTitulo">Alta Usuario(s)</Label>
+					<Label class="txtBotonTitulo">Alta Usuario</Label>
 				</View>
 				<View class="viewTxtInfo">
 					<View class="viewTxtBotonSub1">
@@ -24,7 +24,7 @@
 			</View>
 			<View class="viewTxtBoton">
 				<View class="viewTxtSeccion">
-					<Label class="txtBotonTitulo">Baja Usuario(s)</Label>
+					<Label class="txtBotonTitulo">Baja Usuario</Label>
 				</View>
 				<View class="viewTxtInfo">
 					<View class="viewTxtBotonSub1">
@@ -40,7 +40,7 @@
 			</View>
 			<View class="viewTxtBoton">
 				<View class="viewTxtSeccion">
-					<Label class="txtBotonTitulo">Consulta Usuario(s)</Label>
+					<Label class="txtBotonTitulo">Consulta Usuario</Label>
 				</View>
 				<View class="viewTxtInfo">
 					<View class="viewTxtBotonSub1">
