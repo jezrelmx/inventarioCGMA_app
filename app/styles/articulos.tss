@@ -87,7 +87,7 @@
 },
 
 '#imgAltaArticulo':{
-	image:"/images/altaArticulo.png"
+	image:"/images/agregarArticulo.png"
 },
 
 '#imgBajaArticulo':{

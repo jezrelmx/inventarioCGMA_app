@@ -1,14 +1,13 @@
 var args = arguments[0] || {};
 
-function volver(){
+//Variables globales
+alerta=0;
+
+function volver() {
 	$.winbajaArt.close();
 };
 
-function abrirVerificarBaja(){
-	alert("Verificar baja del articulo");
-};
 $.winbajaArt.open();
-
 
 /**
  * ----------------- HTTP CLIENT CON PARSER PARA JSON -----------------
@@ -16,51 +15,62 @@ $.winbajaArt.open();
 
 var url = url_base + "/inventarioCGMA/consultarArticuloGral_c";
 var client = Ti.Network.createHTTPClient({
-    onload : function(e) {
-    
-        var respuesta = this.responseText;
-        objRespuesta = JSON.parse(respuesta);
-        if (objRespuesta.code == 200) {
-        	console.log("<<<<<<<<<<<<<<<<<<<<<<"+JSON.stringify(objRespuesta));
-        }
-    }
+	onload : function(e) {
+
+		var respuesta = this.responseText;
+		objRespuesta = JSON.parse(respuesta);
+		
+	}
 });
-    
-client.open('GET',url);
+
+client.open('GET', url);
 client.send();
 
+$.btnbaja.addEventListener('click',function(){
+	var url = url_base + "/inventarioCGMA/consultarArticuloGral_c/eliminarArticulo";
+	var clave = $.txtinventario.getValue();
+	for (var key in objRespuesta.data) {
+		if (objRespuesta.data[key].numinventario == clave) {
+			alerta=1;
+			 var Eliminar = { 
+				 id_articulo : objRespuesta.data[key].id_articulo
+			 };
 
-function abrirVerificarBaja(){
-	 var url = url_base + "/inventarioCGMA/consultarArticuloGral_c/eliminarArticulo";
-	 var clave=$.txtinventario.getValue();
-	  for(var key in objRespuesta.data){
-	  	if(objRespuesta.data[key].numinventario==clave){
-	  		console.log("---><<<> key: "+key);
-	  		var Eliminar={
-    			id_articulo:key
-    		};
-	  		
-			var client = Ti.Network.createHTTPClient({
-   				onload : function(e) {
-    			var respuesta = this.responseText;
-        		objRespuesta = JSON.parse(respuesta);
-        		alert("***"+objRespuesta.message);
-        		if (objRespuesta.code == 200) {
-        				
-        				console.log("*****************************Entro");
-        				// $.txtinventario.setValue('');
-        }
-       
-    		}
-		});
-    
-		client.open('POST',url);
-		client.send(Eliminar);
-	  	}
-	  	
-	  }//fin for
+			 var client = Ti.Network.createHTTPClient({
+				 onload : function(e) {
+					 var respuesta = this.responseText;
+					 objRespuesta = JSON.parse(respuesta);
+					 alert("***" + objRespuesta.message);
+					 if (objRespuesta.code == 200) {
+						 $.txtinventario.setValue('');
+					 }
 
-}
+				 },
+				 onerror : function(e) {
+					 Ti.API.debug(e.error);
+					 alert("El servidor no responde");
+				 },
+				 timeout : 10000
+			 });
+
+			 client.open('POST', url);
+			 client.send(Eliminar);
+			 
+		}
+		
+	}//fin for
+	if(alerta==0){
+		alert("La clave no existe");
+	}
+			
+});//fin funcion
+
+
+
+
+
+
+
 
 
 
