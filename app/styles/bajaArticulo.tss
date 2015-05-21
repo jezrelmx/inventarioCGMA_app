@@ -1,14 +1,12 @@
 '#winbajaArt[platform=android]': {
-	backgroundColor: '#121212',
-	barColor:'#CC1A78',
-	width:Titanium.UI.FILL,
+	backgroundColor: '#FFFFFF',
 	height:Titanium.UI.FILL,
-	layout:'vertical',
-	opacity:'85%'
+	width:Titanium.UI.FILL,
+	layout:"absolute"	
 },
 
 "#winbajaArt[platform=ios formFactor=handheld]": {
-	backgroundColor: '#121212',
+	backgroundColor: '#FFFFFF',
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
 	title: 'Inventario CGMA',
 	titleAttributes:  {
@@ -18,71 +16,86 @@
 	height: Ti.UI.FILL,
 	barColor: '#0E2843',
 	translucent: true,
+	layout: 'absolute'
+},
+
+'#scrollUnico': {
+	width: Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	layout: 'horizontal',
+	scrollType: 'vertical'
+},
+
+'.scrollItem': {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+},
+
+'.contenedor': {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
 	layout: 'vertical'
 },
 
-'#viewUp':{
-	backgroundColor:'#ffffff',
-	height:"45.5%",
-	width:Titanium.UI.FILL,
-	layout:"vertical"
+'#wrapContenedor': {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	layout: 'absolute'
 },
 
-'#viewDown':{
-	backgroundColor:'#ffffff',
-	height:"45.5%",
-	width:Titanium.UI.FILL,
-	layout:"vertical"
+/**
+* 	---------------------------- FORMULARIO ----------------------------
+*/
+'#viewLista':{
+	backgroundColor: '#F0F0F0',
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	zIndex: 2
 },
 
-'.viewseparator':{
-	height:'3%',
-	width:Titanium.UI.FILL,
-	layout:'absolute',
-	backgroundColor:'#F0F0F0'
+'.cajon': {
+	width: Titanium.UI.FILL,
+	height: "48dp",
+	top: "4dp",
+	bottom: "4dp",
+	layout: 'horizontal'
+},
+
+'.txtField': {
+	color: "#121212",
+	backgroundColor: "#FFFFFF",
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	maxLength: 50,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+/**
+ * +++++++++++++++++++ BOTON +++++++++++++++++++	
+ */
+'#viewPie':{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	right: 0,
+	bottom: '10dp',
+	layout: "absolute"
+},
+
+'#btnAccion': {
+	top: "10dp",
+	height: "48dp",
+	width: '120dp',
+	backgroundColor: '#CC1A78',
+	right: 0
+},
+
+'#lbAccion': {
+	text: "Enviar",
+	color: "#FFFFFF"
 }
-
-'#lbltitulo':{
-	color: '#ffffff',
-	font: {
-		fontSize: '25dp'
-	}
-}
-
-'#viewtxt':{
-	height:Titanium.UI.FILL,
-	width:Titanium.UI.FILL,
-	layout:'vertical',
-	top:'70dp'
-}
-
-'#txtinventario':{
-	height:Titanium.UI.SIZE,
-	width:'70%',
-	color:"#121212",
-	font: {
-		fontSize: '20dp'
-	},
-	bottom:'10dp',
-	textAlign:'center',
-	
-}
-
-'#btnbaja':{
-	backgroundColor:'#CC1A78',
-	height:Titanium.UI.SIZE,
-	width:Titanium.UI.SIZE,
-	color: '#FFFFFF',
-	font: {
-		fontSize: '20dp'
-	},
-	borderRadius:'10dp',
-	top:'10%'
-}
-
-
-
-
-
-
-
