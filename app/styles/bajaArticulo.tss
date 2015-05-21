@@ -87,7 +87,7 @@
 	layout: "absolute"
 },
 
-'#btnAccion': {
+'#btnbaja': {
 	top: "10dp",
 	height: "48dp",
 	width: '120dp',
@@ -96,6 +96,5 @@
 },
 
 '#lbAccion': {
-	text: "Enviar",
 	color: "#FFFFFF"
 }
