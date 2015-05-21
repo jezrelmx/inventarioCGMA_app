@@ -1,18 +1,42 @@
+<!-- <Alloy>
+<Window id="winbajaArt">
+<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Baja Articulo" onHomeIconItemSelected="volver" />
+<View class="viewseparator"/>
+<View id="viewUp">
+<Label id="lbltitulo">Baja Articulo(s)</Label>
+<View id="viewtxt">
+<TextField id="txtinventario" hintText="Inventario"></TextField>
+<Button id="btnbaja" onClick="abrirVerificarBaja">Cambiar</Button>
+
+</View>
+</View>
+<View class="viewseparator"/>
+<View id="viewDown"></View>
+<View class="viewseparator"/>
+</Window>
+</Alloy> -->
+
 <Alloy>
 	<Window id="winbajaArt">
 		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Baja Articulo" onHomeIconItemSelected="volver" />
-		<View class="viewseparator"/>
-		<View id="viewUp">
-			<Label id="lbltitulo">Baja Articulo(s)</Label>
-			<View id="viewtxt">
-				<TextField id="txtinventario" hintText="Inventario"></TextField>
-				<Button id="btnbaja" onClick="abrirVerificarBaja"> Cambiar </Button>
+		<ScrollView id="scrollUnico">
+			<View class="scrollItem">
+				<View id="wrapContenedor">
+					<View class="contenedor">
+						<View id="viewLista">
+							<Label>Proporcione el número de inventario</Label>
+							<View class="cajon">
+								<TextField id="txtinventario" class="txtField" hintText="XXXXX-XXXXXX" />
+							</View>
+						</View>
+						<View id="viewPie">
+							<View id="btnbaja">
+								<Label id="lbAccion">Eliminar</Label>
+							</View>
+						</View>
+					</View>
+				</View>
 			</View>
-		</View>
-		<!-- <View class="viewseparator"/> -->
-		<View id="viewDown">
-			
-		</View>
-		<View class="viewseparator"/>
+		</ScrollView>
 	</Window>
 </Alloy>

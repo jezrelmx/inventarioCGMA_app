@@ -8,21 +8,32 @@
 			<Label id="empleado" class="lbltexto">Empleado</Label>
 		</View>
 		<View class="viewSeparador"/>
-		<View class="vistatxtbtn" onClick="abrirusuarios">
+		<View class="wrapContenidoBoton" onClick="abrirusuarios">
 			<View class="viewImgBoton">
 				<ImageView id="imgUsuario"></ImageView>
 			</View>
-			<View class="viewTxtSeccion">
-				<Label class="txtBotonTitulo">Usuarios</Label>
+			<View class="viewTxtBoton">
+				<View class="viewTxtSeccion">
+					<Label class="txtBotonTitulo">Usuarios</Label>
+				</View>
+				<View class="viewTxtInfo">
+					<View class="viewTxtBotonSub1">
+					</View>
+				</View>
 			</View>
 		</View>
 		<View class="viewSeparador"/>
-		<View class="vistatxtbtn" onClick="abrirarticulos">
+		<View class="wrapContenidoBoton" onClick="abrirarticulos">
 			<View class="viewImgBoton">
 				<ImageView id="imgArticulo"></ImageView>
 			</View>
-			<View class="viewTxtSeccion">
-				<Label class="txtBotonTitulo">Articulos</Label>
+			<View class="viewTxtBoton">
+				<View class="viewTxtSeccion">
+					<Label class="txtBotonTitulo">Articulos</Label>
+				</View>
+				<View class="viewTxtInfo">
+					<View class="viewTxtBotonSub1"></View>
+				</View>
 			</View>
 		</View>
 		<!-- <View class="viewSeparador"/> -->

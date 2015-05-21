@@ -71,13 +71,81 @@
 	}
 },
 
+////////////////////////******************************************
+'.wrapContenidoBoton': {
+	width: Titanium.UI.FILL,
+	height: '31%',
+	layout: 'horizontal',
+	backgroundColor: '#433F3D',
+},
+
+'.viewImgBoton': {
+	width: '25%',
+	height: Titanium.UI.FILL,
+	layout: 'absolute'
+},
+
+'.viewTxtBoton': {
+	width: '75%',
+	height: '70dp',
+	layout: 'vertical',
+	backgroundColor:'#CC1A78'
+},
+
+'.viewTxtSeccion': {
+	width: Titanium.UI.FILL,
+	height: '35dp',
+	layout: 'absolute'
+},
+
+'.viewTxtInfo': {
+	width: Titanium.UI.FILL,
+	height: '45dp',
+	layout: 'horizontal',
+	},
+
+'.viewTxtBotonSub1': {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.FILL,
+	layout:'absolute'
+	
+},
+
+'.txtBotonTitulo': {
+	left: '10dp',
+	top: '3dp',
+	color: '#BCC4CA',
+	font: {
+		fontSize: '25dp'
+	}
+},
+
+'.txtBotonSub1': {
+	//top: '3dp',
+	bottom:'5dp',
+	left: '10dp',
+	color: '#BCC4CA',
+	font: {
+		fontSize: '16dp'
+	},
+	width:'90%'
+},
+
+
+///////////////////////7****************************************
+
+
+
 '#imgUsuario':{
-	image:"/images/user.png"
+	image:"/images/usuario.png"
 },
 
 '#imgArticulo':{
-	image:"/images/articulos.png"
+	image:"/images/articulo.png"
 },
+
+
+
 
 
 

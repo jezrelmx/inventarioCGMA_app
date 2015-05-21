@@ -87,15 +87,15 @@
 },
 
 '#imgAltaArticulo':{
-	image:"/images/altaArticulo.png"
+	image:"/images/agregarArticulo.png"
 },
 
 '#imgBajaArticulo':{
-	image:"/images/bajaArticulo.png"
+	image:"/images/eliminarArticulo.png"
 },
 
 '#imgConsultaArticulo':{
-	image:"/images/consultaArticulo.png"
+	image:"/images/consultarArticulo.png"
 }
 
 

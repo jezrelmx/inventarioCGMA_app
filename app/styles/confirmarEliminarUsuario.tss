@@ -1,11 +1,11 @@
-'#winbajaArt[platform=android]': {
+'#winConfirmarEliminarUsuario[platform=android]': {
 	backgroundColor: '#FFFFFF',
 	height:Titanium.UI.FILL,
 	width:Titanium.UI.FILL,
 	layout:"absolute"	
 },
 
-"#winbajaArt[platform=ios formFactor=handheld]": {
+"#winConfirmarEliminarUsuario[platform=ios formFactor=handheld]": {
 	backgroundColor: '#FFFFFF',
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
 	title: 'Inventario CGMA',
@@ -74,7 +74,7 @@
 	width: Titanium.UI.FILL,
 	maxLength: 50,
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
-},
+}
 
 /**
  * +++++++++++++++++++ BOTON +++++++++++++++++++	
@@ -87,7 +87,7 @@
 	layout: "absolute"
 },
 
-'#btnbaja': {
+'#btnAccion': {
 	top: "10dp",
 	height: "48dp",
 	width: '120dp',
@@ -96,5 +96,6 @@
 },
 
 '#lbAccion': {
+	text: "Enviar",
 	color: "#FFFFFF"
 }

@@ -1,0 +1,48 @@
+<Alloy>
+	<Window id="winConfirmarEliminarUsuario">
+		<ActionBar platform="android" displayHomeAsUp="true" title="Inventario CGMA" subtitle="Confirmar datos del usuario" onHomeIconItemSelected="volver" />
+		<ScrollView id="scrollUnico">
+			<View class="scrollItem">
+				<View id="wrapContenedor">
+					<View class="contenedor">
+						<View id="viewLista">
+							<Label>Datos del usuario a eliminar</Label>
+							<View class="cajon">
+								<Label id="txtNombreCompleto" class="txtField"/>
+							</View>
+							<View class="cajon">
+								<Label id="txtCargo" class="txtField"/>
+							</View>
+							<View class="cajon">
+								<Label id="txtNumEmpleado" class="txtField"/>
+							</View>
+							<View class="cajon">
+								<Label id="txtCorreo" class="txtField"/>
+							</View>
+							<View class="cajon">
+								<Label id="txtDireccionEjecutiva" class="txtField"/>
+							</View>
+							<View class="cajon">
+								<Label id="txtTipoUsuario" class="txtField"/>
+							</View>
+							<View class="cajon">
+								<Label id="txtEstado" class="txtField"/>
+							</View>
+						</View>
+						
+						
+						
+						
+						
+						
+						<View id="viewPie">
+							<View id="btnAccion">
+								<Label id="lbAccion">Eliminar</Label>
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

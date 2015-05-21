@@ -8,7 +8,7 @@
 			</View>
 			<View class="viewTxtBoton">
 				<View class="viewTxtSeccion">
-					<Label class="txtBotonTitulo">Alta Articulo (s)</Label>
+					<Label class="txtBotonTitulo">Alta Articulo</Label>
 				</View>
 				<View class="viewTxtInfo">
 					<View class="viewTxtBotonSub1">
@@ -24,7 +24,7 @@
 			</View>
 			<View class="viewTxtBoton">
 				<View class="viewTxtSeccion">
-					<Label class="txtBotonTitulo">Baja Articulo (s)</Label>
+					<Label class="txtBotonTitulo">Baja Articulo</Label>
 				</View>
 				<View class="viewTxtInfo">
 					<View class="viewTxtBotonSub1">
@@ -40,7 +40,7 @@
 			</View>
 			<View class="viewTxtBoton">
 				<View class="viewTxtSeccion">
-					<Label class="txtBotonTitulo">Consulta Articulo (s)</Label>
+					<Label class="txtBotonTitulo">Consultar Articulos</Label>
 				</View>
 				<View class="viewTxtInfo">
 					<View class="viewTxtBotonSub1">
