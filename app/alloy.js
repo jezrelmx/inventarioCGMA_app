@@ -18,4 +18,4 @@
  * #FFFFFF  -- BLANCO
  */
 
-var url_base = "http://192.168.3.108";
+var url_base = "http://192.168.3.107";
