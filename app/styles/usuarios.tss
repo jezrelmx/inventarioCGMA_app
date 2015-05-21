@@ -86,13 +86,18 @@
 },
 
 '#imgAltaUsuario':{
-	image:"/images/add.png"
+	image:"/images/agregarUsuario.png"
 },
 
 '#imgBajaUsuario':{
-	image:"/images/remove.png"
+	image:"/images/eliminarUsuario.png"
 },
 
 '#imgConsultaUsuario':{
-	image:"/images/search.png"
+	image:"/images/consultaUsuarios.png"
 }
+
+
+
+
+
