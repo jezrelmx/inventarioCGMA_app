@@ -28,7 +28,13 @@ function salirinventarioCGMA() {
 };
 
 $.btnServidorPublico.addEventListener('click', function() {
-    Alloy.createController('resguardos');
+	var correo = $.txtCorreo.getValue();
+	if(correo == ''){
+		alert("Ingrese correo institucional");
+	}else{
+		$.txtCorreo.setValue('');
+		Alloy.createController('resguardos',correo);
+	}
     // alert('resguardos');
 });
 
